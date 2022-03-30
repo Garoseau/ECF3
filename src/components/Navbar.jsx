@@ -1,15 +1,19 @@
-import React, { Component } from 'react'
+import React, { Component, useState } from 'react'
+import { ReactDOM } from 'react';
 import { Link, NavLink, Route, Routes } from "react-router-dom";
 import '../App.css';
 
-function ActionLink() {
-  function handleClick(e) {
-    e.preventDefault();
-		return (
-			<a href="index.html"class ="navbar_text"><span>TEST</span></a>
-
-		)
-  }
+// export default function PageNav(){
+// 	const [page, setPage] = useState('BASE STATE');
+// 	return(
+// 		<> 
+// 		<div>
+// 			<button onClick={() => setPage('/public/propos.html')}>BUTTON</button>
+// 			LOL :{page}
+// 		</div>
+// 		</>
+// 	)
+// }
 
 export default function Navbar() {
 	return (
