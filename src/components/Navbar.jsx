@@ -2,12 +2,22 @@ import React, { Component } from 'react'
 import { Link, NavLink, Route, Routes } from "react-router-dom";
 import '../App.css';
 
+function ActionLink() {
+  function handleClick(e) {
+    e.preventDefault();
+		return (
+			<a href="index.html"class ="navbar_text"><span>TEST</span></a>
+
+		)
+  }
+
 export default function Navbar() {
 	return (
 		<div>
 		<header>
 		<div class="navbar">
-			<a class='navbar_text' to='propos'></a> 
+
+
 			<a href="index.html"class ="navbar_text"><span>Accueil</span></a>
 			<a href="propos.html"class="navbar_text"><span>Propos</span></a>
 			<a href="résumé.html" class="navbar_text"><span>Résumé</span></a>

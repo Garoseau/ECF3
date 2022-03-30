@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
 import '../App.css';
 
-export default class Propos extends Component {
-	render() {
-		return (
+export default function Propos() {
+	return (
 
 		<>
 		<div class="content_wrapper">
