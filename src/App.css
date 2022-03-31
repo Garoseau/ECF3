@@ -63,14 +63,13 @@
     --orange: #e66702;
   }
 
-  .root {
+  :root {
     font-family: 'Chakra Petch', sans-serif;
     font-size: 1rem;
     font-weight: 400px;
     line-height: 1;
     color: #ffffff;
 
-    display: flex;
     justify-content: center;
     margin: 0;
     align-items: center;
@@ -280,7 +279,7 @@
   }
 
   .grid {
-    z-index: 3;
+    z-index: 1;
     margin: 26px;
     justify-content: center;
     display: grid;
