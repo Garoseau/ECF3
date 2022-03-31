@@ -5,8 +5,8 @@ import '../App.css';
 export default function Articles() {
 	return (
 		
-		<div>
-		<section>
+		
+		
 		<div class="grid">
 				<div class="grid1">
 						<a href="https://www.artstation.com/artwork/mDZYa8">1</a>
@@ -37,7 +37,6 @@ export default function Articles() {
 						<a href="https://www.millenium.org/news/363453.html">9</a>
 				</div>
 		</div>
-		</section>
-		</div>
+
 	)
 }
