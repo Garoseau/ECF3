@@ -5,6 +5,7 @@ import { BrowserRouter, BrowserRouter as Link, Route, Routes } from "react-route
 import Navbar from './components/Navbar';
 import Propos from './components/propos';
 import Venta from './components/venta';
+import Contact from './components/Contact'
 
 
 
@@ -20,6 +21,7 @@ function App() {
           <Route element={<Navbar/>}>
             <Route path="/" element={<Articles/>} />
             <Route path="/propos" element={<Propos/>} />
+            <Route path="/Contact" element={<Contact/>}/>
           </Route>
         {/* </Route> */}
 

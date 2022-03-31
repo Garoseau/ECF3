@@ -5,8 +5,6 @@ import '../App.css';
 export default function Articles() {
 	return (
 		
-		
-		
 		<div class="grid">
 				<div class="grid1">
 						<a href="https://www.artstation.com/artwork/mDZYa8">1</a>
