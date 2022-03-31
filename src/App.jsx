@@ -11,7 +11,6 @@ function App() {
   return (
     <div className="content_wrapper">
 
-      {/* <Navbar></Navbar> */}
       <PageNav></PageNav>
       <Articles></Articles>
     </div>
