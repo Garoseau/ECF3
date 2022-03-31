@@ -129,7 +129,7 @@
       display: flex;
       justify-content: center;
       margin: auto;
-  
+      padding-top: 50px;
       cursor: pointer;
   }
   .navbar span {
@@ -139,6 +139,12 @@
       transition: 0.5s;
   }
   .navbar_text{
+    padding-top: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.5s;
+    color: inherit;
+    text-decoration: none;
       margin-left: 25px;
       margin-right: 25px;
   }
@@ -453,14 +459,16 @@
         cursor: pointer;
     }
     .navbar span {
+    }
+    .navbar_text{
         padding-top: 10px;
         cursor: pointer;
         display: inline-block;
         transition: 0.5s;
-    }
-    .navbar_text{
         margin-left: 25px;
         margin-right: 25px;
+        color: inherit;
+        text-decoration: none;
     }
     .navbar_text:hover {color: #ff7441;}
     

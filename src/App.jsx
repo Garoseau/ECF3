@@ -2,7 +2,7 @@ import './App.css';
 import React from 'react';
 import PageNav from './components/Navbar'
 import Articles from './components/Articles';
-import { BrowserRouter as Link, Route, Router } from "react-router-dom";
+import { BrowserRouter, BrowserRouter as Link, Route, Routes } from "react-router-dom";
 import Navbar from './components/Navbar';
 
 
@@ -10,15 +10,19 @@ import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <div className="content_wrapper">
-      
-      <Router>
-        <Route path="/"/>
-      </Router>
+      <>
+      <BrowserRouter>
+      <Routes>
+      <Route element={<Navbar/>}>
+      <Route path="/" element={<Articles/>} />
 
-      <Navbar></Navbar>
-      <Articles></Articles>
-    </div>
+      </Route>
+
+      </Routes>
+      </BrowserRouter>
+
+
+      </>
   );
 }
 

@@ -1,8 +1,10 @@
 import React from 'react'
+import { Outlet } from 'react-router-dom';
 import '../App.css';
 
 export default function Articles() {
 	return (
+		
 		<div>
 		<section>
 		<div class="grid">
