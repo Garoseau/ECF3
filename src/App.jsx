@@ -17,13 +17,14 @@ return (
   <BrowserRouter>
     <Routes>
 
-      {/*<Route element={<Venta />}> */}
-      <Route element={<Navbar />}>
-      <Route path="/" element={<Articles />} />
-      <Route path="/propos" element={<Propos />} />
-      <Route path="/Contact" element={<Contact />}/>
+      
+      <Route element={<Navbar/>}>
+        <Route path="/" element={<Articles/>}/>
+        <Route path="/Propos" element={<Propos/>}/>
+        <Route path="/Contact" element={<Contact/>}/>
+        <Route path="/Contact" element={<Contact/>}/>
       </Route>
-      {/* </Route> */}
+
 
     </Routes>
   </BrowserRouter>
