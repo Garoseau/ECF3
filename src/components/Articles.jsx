@@ -25,7 +25,7 @@ export default function Articles() {
 		<ThemeProvider theme={theme}>
 		<Card className='box' sx={{ maxWidth: 400, bgcolor:'rgba(20, 20, 20, 0.9)'}}>
 <CardActionArea>
-	<CardMedia component="img" height="140" image="https://static1.millenium.org/articles/9/38/86/89/@/1578785-cosmo-festival-article_image_bd-3.png" alt="" />
+	<CardMedia component="img" height="240" image="https://static1.millenium.org/articles/9/38/86/89/@/1578785-cosmo-festival-article_image_bd-3.png" alt="" />
 	<CardContent>
 		<Typography  variant="h3" color="#8BE4E0">
 		Cosmo Festival 2022
