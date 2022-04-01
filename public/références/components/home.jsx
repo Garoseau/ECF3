@@ -13,6 +13,7 @@ const Home = () => {
       .catch(err => console.error(err))//catch est exécuté lorsqu'il y a erreur
   }, []);
   console.log(products)
+  
   return (
     <>
     <div className='row col-12'>
