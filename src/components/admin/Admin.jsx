@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, Navigate, useNavigate } from 'react-router-dom';
 import ProductService from '../../services/ProdServices'; // importons le service
 import AuthService from '../../services/LogServices';
-import Navbar from '../Navbar';
+import NavbarAdmin from '../admin/NavbarAdmin'
 
 const Admin = () => {
   const [products, setProducts] = useState([]);//déclaration de l'état initialisé à un tableau vide
@@ -27,7 +27,7 @@ console.log(products);//logons l'état
 
 return(
 	<>
-	<Navbar></Navbar>
+	<NavbarAdmin></NavbarAdmin>
 		<div class='box'>
 
 		<table>
