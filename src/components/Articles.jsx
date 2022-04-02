@@ -6,9 +6,10 @@ import { createTheme } from '@mui/material/styles';
 import Grid from '@mui/material/Grid';
 import { CardActionArea } from '@mui/material';
 import { Link, Navigate, useNavigate } from 'react-router-dom';
+
 const theme = createTheme();
 
-theme.typography.h3 = {
+theme.typography.h4 = {
   fontSize: 
 	'22pt',
 };
@@ -21,65 +22,191 @@ theme.typography.h6 = {
 export default function Articles() {
 	return (
 
-<Grid justifyContent={'center'} container spacing={0} xs={12} key={Articles.id} >
-<ThemeProvider theme={theme}>
+<Grid justifyContent={'center'} container spacing={8} rowSpacing={6} xs={12} key={Articles.id} sx={{mt: 2, maxHeight:760}}>
+	<ThemeProvider theme={theme}>
 
 
-<Grid item xs={3}>
-<Card  sx={{ maxWidth: 500, bgcolor:'rgba(20, 20, 20, 0.9)'}}>
-	<CardActionArea className='boxCard' to="/Propos">
-	<a href="https://www.millenium.org/games/game-376">
-	<CardMedia component="img" height="240" image="https://cdna.artstation.com/p/assets/images/images/027/839/028/large/julien-garoseau-gomes-gladius-concept-screen-ui.jpg?1592708367" alt="" />
-	<CardContent>
-		<Typography className='gE' variant="h3">
-		Star Citizen: UI Concept "Aegis Dynamics"
-		</Typography>
+		<Grid  item xs={'auto'}>
+			<Card sx={{ maxWidth: 500, bgcolor:'rgba(20, 20, 20, 0.9)', maxHeight:760, minHeight:760,borderRadius: 3}}>
+				<CardActionArea className='boxCard' to="/Propos">
+					<a href="https://www.millenium.org/games/game-376">
+						<CardMedia component="img" height="500"
+							image="https://cdna.artstation.com/p/assets/images/images/027/839/028/large/julien-garoseau-gomes-gladius-concept-screen-ui.jpg?1592708367"
+							alt="" />
+						<CardContent>
+							<Typography className='gE' variant="h4">
+								Star Citizen: UI Concept "Aegis Dynamics"
+							</Typography>
 
-	</CardContent>
-	<CardContent>
-		<Typography  variant="h6" color="#A1A1A6" textAlign={'start'} >
-		For the sake of an article on Millenium Star Citizen, I undertook to recreate the Concept Screen UI shown in the show "Inside Star Citizen". Except for the fonts, I think I did well in 4 hours of work.
-		</Typography>
-	</CardContent>
-	</a>	
-	</CardActionArea>
-	<CardActions >
-		<Button size="small"  color="success"sx={{color:'#fff'}}>Partager</Button>
-	</CardActions>
-</Card> 
-</Grid>
+						</CardContent>
+						<CardContent>
+							<Typography variant="h6" color="#A1A1A6" textAlign={'start'}>
+								For the sake of an article on Millenium Star Citizen, I undertook to recreate the Concept Screen UI shown in the show "Inside Star Citizen". Except for the fonts, I think I did well in 4 hours of work. It' was done on photoshop and illustator.
+							</Typography>
+						</CardContent>
+					</a>
+				</CardActionArea>
+				<CardActions>
+					<Button size="small" color="success" sx={{color:'#fff'}}>Partager</Button>
+				</CardActions>
+			</Card>
+		</Grid>
 
-<Grid item xs={3}>
-<Card  sx={{ maxWidth: 500, bgcolor:'rgba(20, 20, 20, 0.9)'}}>
+		<Grid  item xs={'auto'}>
+			<Card sx={{ maxWidth: 500, bgcolor:'rgba(20, 20, 20, 0.9)', maxHeight:760, minHeight:760,borderRadius: 3}}>
 
-	<CardActionArea className='boxCard'>
-	
-	<CardMedia component="img" height="240" image="https://cdna.artstation.com/p/assets/images/images/027/584/976/large/julien-garoseau-gomes-ascenseura.jpg?1591950082" alt="" />
-	
-	<CardContent>
-		<Typography className='gE' variant="h3">
-		Star Citizen: UI Concept "Crusader Industries"
-		</Typography>
+				<CardActionArea className='boxCard'>
+					<a href='https://www.artstation.com/artwork/mDZYa8'> 
+					<CardMedia component="img" height="500"
+						image="https://cdna.artstation.com/p/assets/images/images/027/584/976/large/julien-garoseau-gomes-ascenseura.jpg?1591950082"
+						alt="" />
 
-	</CardContent>
+					<CardContent>
+						<Typography className='gE' variant="h4">
+							Star Citizen: UI Concept "Crusader Industries"
+						</Typography>
 
-	<CardContent>
-		<Typography  variant="h6" color="#A1A1A6" textAlign={'start'} >
-		Une partie de l’équipe MGG Star Citizen s’est rendue au Cosmo Festival à Angers, un événement communautaire autour de l’espace et de Star Citizen. Rencontre avec la communauté, ainsi qu'avec des créateurs et des chercheurs.
-		</Typography>
-	</CardContent>
-	
-	</CardActionArea>
+					</CardContent>
 
-	<CardActions >
-		<Button size="small"  color="success"sx={{color:'#fff'}}>Partager</Button>
-	</CardActions>
+					<CardContent>
+						<Typography variant="h6" color="#A1A1A6" textAlign={'start'}>
+						So I made this because I wanted to know where my skills were in terms of speed and it was pretty good, where the Drake UI took me 1 month to do it, this one tuck me just 1 week, so I'm pretty happy
+						</Typography>
+					</CardContent>
 
-</Card> 
-</Grid>
+					</a>
+				</CardActionArea>
 
+				<CardActions>
+					<Button size="small" color="success" sx={{color:'#fff'}}>Partager</Button>
+				</CardActions>
 
-</ThemeProvider>
+			</Card>
+		</Grid>
+
+		<Grid  item xs={'auto'}>
+			<Card sx={{ maxWidth: 500, bgcolor:'rgba(20, 20, 20, 0.9)', maxHeight:760, minHeight:760,borderRadius: 3}}>
+
+				<CardActionArea className='boxCard'>
+					<a href='https://www.artstation.com/artwork/lVPore'> 
+					<CardMedia component="img" height="500"  
+						image="https://cdnb.artstation.com/p/assets/images/images/023/683/685/large/julien-garoseau-gomes-asscendrake-render-v5.jpg?1580022377"
+						alt="" />
+
+					<CardContent>
+						<Typography className='gE' variant="h4">
+							Star Citizen: UI Concept "Drake Interplanetary"
+						</Typography>
+
+					</CardContent>
+
+					<CardContent>
+						<Typography variant="h6" color="#A1A1A6" textAlign={'start'}>
+						So I made this because I wanted to know where my skills were in terms of speed and it was pretty good, where the Drake UI took me 1 month to do it, this one tuck me just 1 week, so I'm pretty happy
+						</Typography>
+					</CardContent>
+
+					</a>
+				</CardActionArea>
+
+				<CardActions>
+					<Button size="small" color="success" sx={{color:'#fff'}}>Partager</Button>
+				</CardActions>
+
+			</Card>
+		</Grid>
+
+		<Grid  item xs={'auto'}>
+			<Card sx={{ maxWidth: 500, bgcolor:'rgba(20, 20, 20, 0.9)', maxHeight:760, minHeight:760,borderRadius: 3}}>
+				<CardActionArea className='boxCard' to="/Propos">
+					<a href="https://www.artstation.com/artwork/9eLG1q">
+						<CardMedia component="img" height="500"
+							image="https://cdnb.artstation.com/p/assets/images/images/020/889/735/large/garoseau-gd-stands.jpg?1569555560"
+							alt="" />
+						<CardContent>
+							<Typography className='gE' variant="h4">
+								Stands
+							</Typography>
+
+						</CardContent>
+						<CardContent>
+							<Typography variant="h6" color="#A1A1A6" textAlign={'start'}>
+							
+							</Typography>
+						</CardContent>
+					</a>
+				</CardActionArea>
+				<CardActions>
+					<Button size="small" color="success" sx={{color:'#fff'}}>Partager</Button>
+				</CardActions>
+			</Card>
+		</Grid>
+
+		<Grid  item xs={'auto'}>
+			<Card sx={{ maxWidth: 500, bgcolor:'rgba(20, 20, 20, 0.9)', maxHeight:760, minHeight:760,borderRadius: 3}}>
+
+				<CardActionArea className='boxCard'>
+					<a href='https://www.artstation.com/artwork/EVgGNq'> 
+					<CardMedia component="img" height="500"
+						image="https://cdna.artstation.com/p/assets/images/images/019/222/890/large/julien-gomes-01-03-page-001.jpg?1562580871"
+						alt="" />
+
+					<CardContent>
+						<Typography className='gE' variant="h4">
+						Black Sheep News
+						</Typography>
+
+					</CardContent>
+
+					<CardContent>
+						<Typography variant="h6" color="#A1A1A6" textAlign={'start'}>
+						A French newspaper about my old org Black Sheep, a quite wonderful adventure that made me encounter great people. Made with La Grande Panthère & Pactole. <br /><br /><br /><br />
+						</Typography>
+					</CardContent>
+
+					</a>
+				</CardActionArea>
+
+				<CardActions>
+					<Button size="small" color="success" sx={{color:'#fff'}}>Partager</Button>
+				</CardActions>
+
+			</Card>
+		</Grid>
+
+		<Grid  item xs={'auto'}>
+			<Card sx={{ maxWidth: 500, bgcolor:'rgba(20, 20, 20, 0.9)', maxHeight:760, minHeight:760,borderRadius: 3}}>
+
+				<CardActionArea className='boxCard'>
+					<a href='https://www.millenium.org/news/350397.html'> 
+					<CardMedia component="img" height="500"  
+						image="https://static1.millenium.org/articles/7/35/03/97/@/1196508-v-rapport-octobre-article_image_bd-1.png"
+						alt="" />
+
+					<CardContent>
+						<Typography className='gE' variant="h4">
+						Les récompenses des Subscribers du mois de octobre
+						</Typography>
+
+					</CardContent>
+
+					<CardContent>
+						<Typography variant="h6" color="#A1A1A6" textAlign={'start'}>
+						Tous les mois, les subscribers de Star Citizen ont accès à de nouveaux items en jeu. Découvrez les avantages Subscribers du mois de mars 2021.
+						</Typography>
+					</CardContent>
+
+					</a>
+				</CardActionArea>
+
+				<CardActions>
+					<Button size="small" color="success" sx={{color:'#fff'}}>Partager</Button>
+				</CardActions>
+
+			</Card>
+		</Grid>
+
+	</ThemeProvider>
 </Grid>
 
 )}

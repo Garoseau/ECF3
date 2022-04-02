@@ -11,6 +11,8 @@ import Admin from './components/admin/Admin'
 import PrivateRoute from './components/admin/PrivateRoute';
 
 
+
+
 function App() {
 return (
 <>
@@ -21,6 +23,7 @@ return (
       
       <Route element={<Navbar/>}>
         <Route path="/" element={<Articles/>}/>
+        <Route path="/Home" element={<Articles/>}/>
         <Route path="/Propos" element={<Propos/>}/>
         <Route path="/Contact" element={<Contact/>}/>
         <Route path="/Contact" element={<Contact/>}/>

@@ -3,12 +3,19 @@ import React, { Component, useState } from 'react'
 import { Link, NavLink, Outlet, Route, Routes } from "react-router-dom";
 
 
+
 function Navbar() {
+
+	const [isActive, setActive] = useState("");
+	
+	const handleToggle = () => {
+		setActive(!isActive);
+	};
  return (
  <>
 
  	<div class="navbar">
- 		<Link className='navbar_text' to="/">Home</Link>
+ 		<Link className={`navbar_text ${isActive ? "" : "_active"}`} onClick={handleToggle} to="/Home" >Home</Link>
  		<Link className='navbar_text' to="/propos">Propos</Link>
  		<Link className='navbar_text' to="/Contact">Contact</Link>
 
@@ -19,6 +26,8 @@ function Navbar() {
 
  	<Outlet />
  </>
- )
- }
-export default Navbar;
+ )}
+
+ export default { 
+	Navbar, 
+}
