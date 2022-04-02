@@ -19,7 +19,7 @@ const Login = () => {
     const handleSubmit = (e)=>{
         e.preventDefault();
         if(LogServices.login(user.email, user.password)){
-            navigate('/admin');
+            navigate('/Admin');
         }else{
             setMsgErr("l'email et/ou le mot de passe ne correspondent pas");
         }

@@ -92,13 +92,11 @@
     width: 100%;
   }
 
-  /* .content_wrapper {
-    height: 100vh;
-    width: 100%;
+   .content_wrapper {
     flex-direction: center;
     position: relative;
     z-index: 1;
-  } */
+  } 
 
 
   /** HEADER */
@@ -279,17 +277,14 @@
     color: inherit;
     text-decoration: none;
   }
-
   .grid2>a {
     color: inherit;
     text-decoration: none;
   }
-
   .grid3>a {
     color: inherit;
     text-decoration: none;
   }
-
   .grid4>a {
     color: inherit;
     text-decoration: none;
@@ -480,5 +475,18 @@
   li {
     list-style: inside;
     line-height: 30px;
+  }
+  table{
+    margin: auto;
+  }
+  tr{
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+    display:flex;
+  }
+  th{
+    padding: 30px;
   }
 }

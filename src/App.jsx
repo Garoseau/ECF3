@@ -7,7 +7,8 @@ import Propos from './components/Propos';
 import Vanta from './components/Vanta';
 import Contact from './components/Contact'
 import Login from './components/admin/Login'
-
+import Admin from './components/admin/Admin'
+import PrivateRoute from './components/admin/PrivateRoute';
 
 
 function App() {
@@ -25,7 +26,7 @@ return (
         <Route path="/Contact" element={<Contact/>}/>
       </Route>
       <Route path="login" element={<Login/>} /> 
-      {/* <Route path="admin" element={<PrivateRoute><Admin /></PrivateRoute>} /> */}
+      <Route path="admin" element={<PrivateRoute><Admin /></PrivateRoute>}/> 
 
 
     </Routes>
