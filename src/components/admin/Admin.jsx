@@ -30,9 +30,10 @@ return(
 	<NavbarAdmin></NavbarAdmin>
 		<div class='box'>
 
+			<h2>Products</h2>
 		<table>
 
-			<h2>Products</h2>
+			<thead>
 
 			<tr>
 			<th>ID</th>
@@ -43,16 +44,24 @@ return(
 			<th>Date de dernière modification</th>
 			<th>Action</th>
 			</tr>
+			</thead>
 
-			<tr key={products.id}>
-			<th>{products.id}</th>
-			<th>Titre</th>
+			<tbody>
+
+			{products && products.map(product => (
+			<tr key={product.id}>
+			<th>{product.id}</th>
+			<th>{product.Titre}</th>
 			<th>Auteur</th>
 			<th>Date de création</th>
 			<th>Date de publication</th>
 			<th>Date de dernière modification</th>
 			<th>Action</th>
 			</tr>
+			))}
+			</tbody>
+
+
 
 		</table>
 
