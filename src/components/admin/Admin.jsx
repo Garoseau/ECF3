@@ -8,21 +8,19 @@ const Admin = () => {
   const [products, setProducts] = useState([]);//déclaration de l'état initialisé à un tableau vide
   const navigate = useNavigate();
 useEffect(() => {
-    ProdService.getProducts()
+    ProdService.getProducts2()
       .then(res => res.json())
       .then(data => setProducts(data))//lorsqu'il y a succès on met à jour l'état avec (data)
       .catch(err => console.error(err))//catch est exécuté lorsqu'il y a erreur
   }, []);
+
 const deleteProduct = id => {
     ProdService.removeProduct(id)
       .then(data => console.log(data))
       .catch(err => console.error(err));
     window.location.reload();
   }
-const handleClick = () =>{
-    AuthService.logout();
-    navigate('/login');
-  }
+
 console.log(products);//logons l'état
 
 return(
