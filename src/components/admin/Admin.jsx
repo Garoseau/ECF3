@@ -28,12 +28,12 @@ return(
 	<NavbarAdmin></NavbarAdmin>
 		<div class='box'>
 
-			<h2>Products</h2>
+			<h2 class='grey'>Products</h2>
 		<table>
 
 			<thead>
 
-			<tr>
+			<tr class='grey'>
 			<th>ID</th>
 			<th>Titre</th>
 			<th>Auteur</th>
