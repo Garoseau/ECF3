@@ -1,8 +1,10 @@
 import '../App.css';
 import React, { Component, useState } from 'react'
 import { Link, NavLink, Outlet, Route, Routes } from "react-router-dom";
+import { PersonIcon } from '@mui/icons-material/Person';
 
- function Navbar() {
+
+function Navbar() {
  return (
  <>
 
@@ -10,9 +12,10 @@ import { Link, NavLink, Outlet, Route, Routes } from "react-router-dom";
  		<Link className='navbar_text' to="/">Home</Link>
  		<Link className='navbar_text' to="/propos">Propos</Link>
  		<Link className='navbar_text' to="/Contact">Contact</Link>
-		<Link className='navbar_text' to="/Contact">Login</Link>
+
  		<a class="navbar_text" href="https://www.millenium.org/games/game-376" target="_blank">MGG Star Citizen</a>
  		<a class="navbar_text" href="img/CV_Julien_Gomes.pdf" target="_blank">CV</a>
+		<Link className='navbar_text' to="/Login">Login</Link>
  	</div>
 
  	<Outlet />

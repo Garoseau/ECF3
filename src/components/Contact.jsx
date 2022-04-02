@@ -1,6 +1,6 @@
+import '../App.css';
 import React from 'react'
 import { Outlet } from 'react-router-dom';
-import '../App.css';
 
 export default function Contact() {
 	return (	
