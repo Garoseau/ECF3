@@ -27,14 +27,14 @@ export default function Articles() {
 
 
 		<Grid  item xs={'auto'}>
-			<Card sx={{ maxWidth: 500, bgcolor:'rgba(20, 20, 20, 0.9)', maxHeight:760, minHeight:760,borderRadius: 3}}>
+			<Card sx={{ maxWidth: 500, bgcolor:'rgba(20, 20, 20, 0.8)', maxHeight:760, minHeight:760,borderRadius: 3, backdropFilter: "blur(5px)", border: 1, borderColor: "#2B2B2B"}}>
 				<CardActionArea className='boxCard' to="/Propos">
 					<a href="https://www.millenium.org/games/game-376">
 						<CardMedia component="img" height="500"
 							image="https://cdna.artstation.com/p/assets/images/images/027/839/028/large/julien-garoseau-gomes-gladius-concept-screen-ui.jpg?1592708367"
 							alt="" />
 						<CardContent>
-							<Typography className='gE' variant="h4">
+							<Typography className='gC' variant="h4">
 								Star Citizen: UI Concept "Aegis Dynamics"
 							</Typography>
 
@@ -53,7 +53,7 @@ export default function Articles() {
 		</Grid>
 
 		<Grid  item xs={'auto'}>
-			<Card sx={{ maxWidth: 500, bgcolor:'rgba(20, 20, 20, 0.9)', maxHeight:760, minHeight:760,borderRadius: 3}}>
+			<Card sx={{ maxWidth: 500, bgcolor:'rgba(20, 20, 20, 0.8)', maxHeight:760, minHeight:760,borderRadius: 3, backdropFilter: "blur(5px)", border: 1, borderColor: "#2B2B2B"}}>
 
 				<CardActionArea className='boxCard'>
 					<a href='https://www.artstation.com/artwork/mDZYa8'> 
@@ -62,7 +62,7 @@ export default function Articles() {
 						alt="" />
 
 					<CardContent>
-						<Typography className='gE' variant="h4">
+						<Typography className='gA' variant="h4">
 							Star Citizen: UI Concept "Crusader Industries"
 						</Typography>
 
@@ -85,7 +85,7 @@ export default function Articles() {
 		</Grid>
 
 		<Grid  item xs={'auto'}>
-			<Card sx={{ maxWidth: 500, bgcolor:'rgba(20, 20, 20, 0.9)', maxHeight:760, minHeight:760,borderRadius: 3}}>
+			<Card sx={{ maxWidth: 500, bgcolor:'rgba(20, 20, 20, 0.8)', maxHeight:760, minHeight:760,borderRadius: 3, backdropFilter: "blur(5px)", backdropFilter: "blur(5px)", border: 1, borderColor: "#2B2B2B"}}>
 
 				<CardActionArea className='boxCard'>
 					<a href='https://www.artstation.com/artwork/lVPore'> 
@@ -117,7 +117,7 @@ export default function Articles() {
 		</Grid>
 
 		<Grid  item xs={'auto'}>
-			<Card sx={{ maxWidth: 500, bgcolor:'rgba(20, 20, 20, 0.9)', maxHeight:760, minHeight:760,borderRadius: 3}}>
+			<Card sx={{ maxWidth: 500, bgcolor:'rgba(20, 20, 20, 0.8)', maxHeight:760, minHeight:760,borderRadius: 3, backdropFilter: "blur(5px)", border: 1, borderColor: "#2B2B2B"}}>
 				<CardActionArea className='boxCard' to="/Propos">
 					<a href="https://www.artstation.com/artwork/9eLG1q">
 						<CardMedia component="img" height="500"
@@ -143,7 +143,7 @@ export default function Articles() {
 		</Grid>
 
 		<Grid  item xs={'auto'}>
-			<Card sx={{ maxWidth: 500, bgcolor:'rgba(20, 20, 20, 0.9)', maxHeight:760, minHeight:760,borderRadius: 3}}>
+			<Card sx={{ maxWidth: 500, bgcolor:'rgba(20, 20, 20, 0.8)', maxHeight:760, minHeight:760,borderRadius: 3, backdropFilter: "blur(5px)", border: 1, borderColor: "#2B2B2B"}}>
 
 				<CardActionArea className='boxCard'>
 					<a href='https://www.artstation.com/artwork/EVgGNq'> 
@@ -175,7 +175,7 @@ export default function Articles() {
 		</Grid>
 
 		<Grid  item xs={'auto'}>
-			<Card sx={{ maxWidth: 500, bgcolor:'rgba(20, 20, 20, 0.9)', maxHeight:760, minHeight:760,borderRadius: 3}}>
+			<Card sx={{ maxWidth: 500, bgcolor:'rgba(20, 20, 20, 0.8)', maxHeight:760, minHeight:760,borderRadius: 3, backdropFilter: "blur(5px)", border: 1, borderColor: "#2B2B2B"}}>
 
 				<CardActionArea className='boxCard'>
 					<a href='https://www.millenium.org/news/350397.html'> 

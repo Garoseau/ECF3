@@ -205,6 +205,11 @@ a{
     -webkit-background-clip: text;
     background-image:  linear-gradient(180deg, rgba(150,37,41,1) 0%, rgba(207,57,62,1) 20%,rgba(207,57,62,1) 80%, rgba(150,37,41,1) 100%);
   }
+  .gE:hover{
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-image:  rgb(192, 207, 57); 
+  }
   .gF{
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
