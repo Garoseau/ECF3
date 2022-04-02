@@ -1,8 +1,6 @@
 import React, {useState} from 'react';
 import { useNavigate } from 'react-router-dom';
 import LogServices from '../../services/LogServices';
-import { CardMedia, Button, CardActions, CardContent, Typography, Card } from '@mui/material';
-import { maxWidth } from '@mui/system';
 import Navbar from '../../components/Navbar';
 
 const Login = () => {
