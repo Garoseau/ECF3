@@ -1,4 +1,7 @@
-[{
+
+{"products":
+[
+	{
 		"id": "1",
 		"titre": "Roadmap Roundup",
 		"auteur": "Wiset",
@@ -19,4 +22,4 @@
 		"date": "15/02/2022",
 		"img": "https://static1.millenium.org/articles/4/38/68/64/@/1563590-modele-vignette-2021-star-citizen-mgg-article_image_bd-2.png"
 	}
-]
+]}
