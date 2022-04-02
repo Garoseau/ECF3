@@ -4,7 +4,7 @@ import { Outlet } from 'react-router-dom';
 
 export default function Contact() {
 	return (	
-		<div>
+		<div class='boxForm'>
 				<form action="mailto:julien.gomes.school@gmail.com" method="post" autocomplete="off">
 
 						<div class="form">
@@ -19,7 +19,7 @@ export default function Contact() {
 						</div>
 
 						<div class="message">
-								<input type="reset" value="annuler"/>
+								<input class='' type="reset" value="annuler"/>
 								<input type="submit" value="envoyer"/>
 						</div>
 
