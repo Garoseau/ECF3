@@ -38,14 +38,14 @@ key={Articles.id}
 	<CardMedia component="img" height="240" image="https://static1.millenium.org/articles/9/38/86/89/@/1578785-cosmo-festival-article_image_bd-3.png" alt="" />
 	
 	<CardContent>
-		<Typography  variant="h3" color="#8BE4E0">
+		<Typography  variant="h3" color="#e2e2e2">
 		Cosmo Festival 2022
 		</Typography>
 
 	</CardContent>
 
 	<CardContent>
-		<Typography  variant="h6" color="#fff" textAlign={'start'} >
+		<Typography  variant="h6" color="#A1A1A6" textAlign={'start'} >
 		Une partie de l’équipe MGG Star Citizen s’est rendue au Cosmo Festival à Angers, un événement communautaire autour de l’espace et de Star Citizen. Rencontre avec la communauté, ainsi qu'avec des créateurs et des chercheurs.
 		</Typography>
 	</CardContent>
@@ -53,7 +53,7 @@ key={Articles.id}
 	</CardActionArea>
 
 	<CardActions>
-		<Button size="small"  color="success"sx={{color:'#8BE4E0'}}>Partager</Button>
+		<Button size="small"  color="success"sx={{color:'#fff'}}>Partager</Button>
 	</CardActions>
 
 </Card> 
