@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { useNavigate } from 'react-router-dom';
 import LogServices from '../../services/LogServices';
+import { maxWidth } from '@mui/system';
 import Navbar from '../../components/Navbar';
 
 const Login = () => {

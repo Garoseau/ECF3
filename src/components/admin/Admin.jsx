@@ -6,9 +6,9 @@ import NavbarAdmin from '../admin/NavbarAdmin'
 
 const Admin = () => {
   const [products, setProducts] = useState([]);//déclaration de l'état initialisé à un tableau vide
-  const navigate = useNavigate();
-useEffect(() => {
-    ProdService.getProducts2()
+
+	useEffect(() => {
+    ProdService.getProducts2('/')
       .then(res => res.json())
       .then(data => setProducts(data))//lorsqu'il y a succès on met à jour l'état avec (data)
       .catch(err => console.error(err))//catch est exécuté lorsqu'il y a erreur
