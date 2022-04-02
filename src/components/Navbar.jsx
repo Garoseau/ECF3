@@ -1,7 +1,6 @@
 import '../App.css';
 import React, { Component, useState } from 'react'
 import { Link, NavLink, Outlet, Route, Routes } from "react-router-dom";
-import { PersonIcon } from '@mui/icons-material/Person';
 
 
 function Navbar() {
