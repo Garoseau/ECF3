@@ -38,7 +38,7 @@ key={Articles.id}
 	<CardMedia component="img" height="240" image="https://static1.millenium.org/articles/9/38/86/89/@/1578785-cosmo-festival-article_image_bd-3.png" alt="" />
 	
 	<CardContent>
-		<Typography  variant="h3" color="#e2e2e2">
+		<Typography className='gE' variant="h3">
 		Cosmo Festival 2022
 		</Typography>
 
