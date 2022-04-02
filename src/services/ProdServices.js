@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API_URL = axios.create({
-   baseURL: "http://localhost:3000/products" 
+   baseURL: `http://localhost:3000/products` 
 })  //url de l'api 
 
 const getProducts = () => {
