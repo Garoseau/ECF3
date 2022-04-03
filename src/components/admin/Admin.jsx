@@ -10,7 +10,7 @@ const Admin = () => {
 
 	useEffect(() => {
     ProdService.getProducts() 
-      .then(res => res.json())
+      .then(res => res.json(res))
       .then(data => setProducts(data))//lorsqu'il y a succès on met à jour l'état avec (data)
       .catch(err => console.error(err))//catch est exécuté lorsqu'il y a erreur
   }, []);
@@ -48,7 +48,7 @@ return(
 			<tbody>
 
 			{products && products.map(product => (
-			<tr key={product.id}>
+			<tr  >
 			<p>{product.auteur}</p>
 			<th>{product.Titre}</th>
 			<th>Auteur</th>
