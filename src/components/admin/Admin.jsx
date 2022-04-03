@@ -8,7 +8,7 @@ const Admin = () => {
   const [products, setProducts] = useState([]);//déclaration de l'état initialisé à un tableau vide
 
 	useEffect(() => {
-    ProdService.getProducts2()
+    ProdService.getProducts()
       .then(res => res.json())
       .then(data => setProducts(data))//lorsqu'il y a succès on met à jour l'état avec (data)
       .catch(err => console.error(err))//catch est exécuté lorsqu'il y a erreur
