@@ -38,7 +38,7 @@
   }
 }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 0px) {
 
   /* 
       border-image:conic-gradient(from 0deg at 50% 50%, #FF7A00 0deg, #FFB800 43.62deg, #317FF3 138.3deg, #52A1FF 246.8deg, #FF7A00 360deg);
@@ -76,7 +76,7 @@
 
     background: #000000;
     /* background-image: url(../img/background.jpg);  */
-    background-image: url(../img/background3.png); 
+    background-image: url(../img/background3.png);
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -94,14 +94,15 @@
     width: 100%;
   }
 
-   .content_wrapper {
+  .content_wrapper {
     flex-direction: center;
     position: relative;
     z-index: 1;
-  } 
-a{
-  color: transparent;
-}
+  }
+
+  a {
+    color: transparent;
+  }
 
   /** HEADER */
   .navbar {
@@ -137,9 +138,11 @@ a{
   .navbar_text:hover {
     color: #ffffff;
   }
+
   .navbar_text_active {
-    color:#CF393E;
+    color: #CF393E;
   }
+
   /** SECTION  */
   section {
     display: flex;
@@ -150,15 +153,20 @@ a{
   }
 
   /** BOX TEXT */
-  .box.centre{
-    margin-top: 200px;
+  .box.centre {
+    margin-top: 140px;
   }
-  .boxGrid{
+
+  .boxGrid {
     margin-top: 20px;
   }
-  .boxCard{
+
+  .boxCard {
     margin: auto;
+    display: flex;
+    
   }
+
   .box {
     backdrop-filter: saturate(180%) blur(20px);
     z-index: 5;
@@ -178,41 +186,46 @@ a{
     font-size: 34pt;
     text-align: center;
   }
-.gradient {
-  -webkit-text-fill-color: transparent;
-  -text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  background-size: 100% 500%
-}
 
-  .gradient.gA{
-    background-image: rgb(37, 47, 255);
-    background-image: linear-gradient(49deg, #e94d4d 0, #ff564a 30%, #ec4856 58%, #ff5b8c 95%) !important;;
-  }
-  .gradient.gB{
-    background-image: rgb(37, 47, 255);
-    background-image: linear-gradient(49deg, #e94d4d 0, #ff564a 30%, #ec4856 58%, #ff5b8c 95%) !important;;
+  .gradient {
+    -webkit-text-fill-color: transparent;
+    -text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    background-size: 100% 500%
   }
 
-.gradient.anime{
+  .gradient.anime {
     animation: gradient 2s ease infinite;
     animation-direction: alternate
   }
 
+  .gradient.gA {
+    background-image: rgb(37, 47, 255);
+    background-image: linear-gradient(49deg, #e94d4d 0, #ff564a 30%, #ec4856 58%, #ff5b5b 95%) !important;
+    ;
+  }
+  .gradient.gB {
+    background-image: rgb(37, 47, 255);
+    background-image: linear-gradient(49deg, #c0c0c0 0, #ffffff 30%, #ffffff 58%, #c3c2eb 95%) !important;
+    ;
+  }
+
   @keyframes gradient {
     0% {
-        background-position: 0 0
+      background-position: 0 0
     }
 
     100% {
-        background-position: 0 100%
+      background-position: 0 100%
     }
-}
-
-  .grey{
-    color:#e2e2e2;
   }
+
+  .grey {
+    color: #e2e2e2;
+  }
+
   .text {
     border-radius: 30px;
     text-align: justify;
@@ -279,8 +292,8 @@ a{
   }
 
 
-  
-  
+
+
   /** FORMULAIRE */
 
   .boxForm {
@@ -294,6 +307,7 @@ a{
     margin-top: 200px;
     border: #2b2b2b solid 1px;
   }
+
   input {
     display: flex;
     margin: auto;
@@ -309,7 +323,7 @@ a{
     font-size: 16pt;
     font-family: 'Chakra Petch', sans-serif;
   }
-  
+
   textarea {
     display: flex;
     margin: auto;
@@ -324,7 +338,7 @@ a{
     font-family: 'Chakra Petch', sans-serif;
     font-size: 16pt;
   }
-  
+
   .form {
     align-items: center;
     flex-direction: column;
@@ -332,59 +346,60 @@ a{
     margin: auto;
     padding-top: 10px;
     padding-bottom: 10px;
-    
+
     line-gap-override: 20px;
   }
-  .buttonbox{
 
-  }
   .button {
     align-items: center;
     display: flex;
     margin: auto;
     margin-top: 10px;
     margin-right: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     width: 200px;
     height: 40px;
     border-radius: 4px;
   }
-  
+
   .button input {
     color: #ffffff;
   }
-  
+
   input:focus {
     border-color: #0c9d46;
     outline: none;
   }
-  
+
   input:hover {
     color: #0c9d46;
     transition: 0.5s;
-    
+
   }
-  
+
   textarea:focus {
     border-color: #0c9d46;
     outline: none;
   }
-  
+
   li {
     list-style: inside;
     line-height: 30px;
   }
-  table{
+
+  table {
     margin: auto;
   }
-  tr{
+
+  tr {
     text-align: center;
     justify-content: center;
     margin: auto;
     position: relative;
-    display:flex;
+    display: flex;
   }
-  th{
+
+  th {
     padding: 30px;
   }
 
@@ -393,44 +408,47 @@ a{
     color: inherit;
     text-decoration: none;
   }
+
   .grid2>a {
     color: inherit;
     text-decoration: none;
   }
+
   .grid3>a {
     color: inherit;
     text-decoration: none;
   }
+
   .grid4>a {
     color: inherit;
     text-decoration: none;
   }
-  
+
   .grid5>a {
     color: inherit;
     text-decoration: none;
   }
-  
+
   .grid6>a {
     color: inherit;
     text-decoration: none;
   }
-  
+
   .grid7>a {
     color: inherit;
     text-decoration: none;
   }
-  
+
   .grid8>a {
     color: inherit;
     text-decoration: none;
   }
-  
+
   .grid9>a {
     color: inherit;
     text-decoration: none;
   }
-  
+
   .grid {
     z-index: 1;
     margin: 26px;
@@ -443,6 +461,7 @@ a{
     column-gap: 26px;
     color: transparent;
   }
+
   .gridB {
     z-index: 1;
     margin: 26px;
@@ -455,7 +474,7 @@ a{
     column-gap: 26px;
     color: transparent;
   }
-  
+
   .grid>div {
     background-position: center center;
     background-size: cover;
@@ -464,51 +483,51 @@ a{
     cursor: pointer;
     transition: box-shadow .3s;
   }
-  
+
   .grid>div:hover {
     box-shadow: 0 5px 10px rgba(14, 14, 14, 0.8);
   }
-  
+
   .grid1 {
     grid-row: 1;
     background-image: url(https://cdna.artstation.com/p/assets/images/images/027/584/976/large/julien-garoseau-gomes-ascenseura.jpg?1591950082);
   }
-  
+
   .grid2 {
     grid-row: 1;
     background-image: url(https://cdnb.artstation.com/p/assets/images/images/023/683/685/large/julien-garoseau-gomes-asscendrake-render-v5.jpg?1580022377);
   }
-  
+
   .grid3 {
     grid-row: 1;
     background-image: url(https://cdna.artstation.com/p/assets/images/images/027/839/028/large/julien-garoseau-gomes-gladius-concept-screen-ui.jpg?1592708367);
   }
-  
+
   .grid4 {
     grid-row: 2;
     background-image: url(https://cdnb.artstation.com/p/assets/images/images/020/889/735/large/garoseau-gd-stands.jpg?1569555560);
   }
-  
+
   .grid5 {
     grid-row: 2;
     background-image: url(https://cdna.artstation.com/p/assets/images/images/019/222/890/large/julien-gomes-01-03-page-001.jpg?1562580871);
   }
-  
+
   .grid6 {
     grid-row: 2;
     background-image: url(https://cdna.artstation.com/p/assets/images/images/019/222/558/large/julien-gomes-01-02-01.jpg?1562579150);
   }
-  
+
   .grid7 {
     grid-row: 3;
     background-image: url(https://static1.millenium.org/articles/6/37/04/76/@/1403752-patch-alpha-312-article_image_bd-5.jpg);
   }
-  
+
   .grid8 {
     grid-row: 3;
     background-image: url(https://static1.millenium.org/articles/9/36/91/29/@/1391548-v-ui-gladius3-article_image_bd-4.png);
   }
-  
+
   .grid9 {
     grid-row: 3;
     background-image: url(https://static1.millenium.org/articles/3/36/34/53/@/1330101-v-sc-companion-3-article_image_bd-4.png);

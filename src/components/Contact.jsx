@@ -4,7 +4,7 @@ import { Outlet } from 'react-router-dom';
 
 export default function Contact() {
 	return (	
-		<div class='boxForm'>
+		<div class='box centre'>
 				<form action="mailto:julien.gomes.school@gmail.com" method="post" autocomplete="off">
 
 						<div class="form">

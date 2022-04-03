@@ -1,5 +1,5 @@
 const login = (email, password) => {
-    if(email === "contact@garoseau.com" && password === "AZER"){
+    if(email === "contact@garoseau.com" && password === "aze"){
         localStorage.setItem("token4234", Math.floor(Math.random()*10000));
         return true;
     }else{

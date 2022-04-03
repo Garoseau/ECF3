@@ -22,7 +22,7 @@ theme.typography.h6 = {
 export default function Articles() {
 	return (
 
-<Grid justifyContent={'center'} container spacing={8} rowSpacing={6} xs={12} key={Articles.id} sx={{mt: 2, maxHeight:760}}>
+<Grid justifyContent={'center'} container spacing={6} rowSpacing={6} xs={12} key={Articles.id} sx={{mt: 2, maxHeight:760}}>
 	<ThemeProvider theme={theme}>
 
 
