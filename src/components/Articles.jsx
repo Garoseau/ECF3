@@ -5,7 +5,6 @@ import { ThemeProvider } from '@mui/material/styles';
 import { createTheme } from '@mui/material/styles';
 import Grid from '@mui/material/Grid';
 import { CardActionArea } from '@mui/material';
-import { Link, Navigate, useNavigate } from 'react-router-dom';
 
 const theme = createTheme();
 
