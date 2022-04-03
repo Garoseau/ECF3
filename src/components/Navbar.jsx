@@ -10,13 +10,13 @@ function Navbar() {
  <>
 
  	<div class="navbar">
- 		<Link className='navbar_text' to="/Home" >Home</Link>
- 		<Link className='navbar_text' to="/propos">Propos</Link>
- 		<Link className='navbar_text' to="/Contact">Contact</Link>
+ 		<Link className='gradient gA anime navbar_text' to="/Home" >Home</Link>
+ 		<Link className='gradient gA anime navbar_text' to="/propos">Propos</Link>
+ 		<Link className='gradient gA anime navbar_text' to="/Contact">Contact</Link>
 
- 		<a class="navbar_text" href="https://www.millenium.org/games/game-376" target="_blank">MGG Star Citizen</a>
- 		<a class="navbar_text" href="img/CV_Julien_Gomes.pdf" target="_blank">CV</a>
-		<Link className='navbar_text' to="/Login">Login</Link>
+ 		<a class="gradient gA anime navbar_text" href="https://www.millenium.org/games/game-376" target="_blank">MGG Star Citizen</a>
+ 		<a class="gradient gA anime navbar_text" href="img/CV_Julien_Gomes.pdf" target="_blank">CV</a>
+		<Link className='gradient gA anime navbar_text' to="/Login">Login</Link>
  	</div>
 
  	<Outlet />

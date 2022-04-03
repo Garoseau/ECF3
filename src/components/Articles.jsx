@@ -34,7 +34,7 @@ export default function Articles() {
 							image="https://cdna.artstation.com/p/assets/images/images/027/839/028/large/julien-garoseau-gomes-gladius-concept-screen-ui.jpg?1592708367"
 							alt="" />
 						<CardContent>
-							<Typography className='gC' variant="h4">
+							<Typography className='gradient gA anime' variant="h4">
 								Star Citizen: UI Concept "Aegis Dynamics"
 							</Typography>
 
@@ -62,7 +62,7 @@ export default function Articles() {
 						alt="" />
 
 					<CardContent>
-						<Typography className='gA' variant="h4">
+						<Typography className='gradient gA anime' variant="h4">
 							Star Citizen: UI Concept "Crusader Industries"
 						</Typography>
 
@@ -94,7 +94,7 @@ export default function Articles() {
 						alt="" />
 
 					<CardContent>
-						<Typography className='gE' variant="h4">
+						<Typography className='gradient gA anime' variant="h4">
 							Star Citizen: UI Concept "Drake Interplanetary"
 						</Typography>
 
@@ -124,7 +124,7 @@ export default function Articles() {
 							image="https://cdnb.artstation.com/p/assets/images/images/020/889/735/large/garoseau-gd-stands.jpg?1569555560"
 							alt="" />
 						<CardContent>
-							<Typography className='gE' variant="h4">
+							<Typography className='gradient gA anime' variant="h4">
 								Stands
 							</Typography>
 
@@ -152,7 +152,7 @@ export default function Articles() {
 						alt="" />
 
 					<CardContent>
-						<Typography className='gE' variant="h4">
+						<Typography className='gradient gA anime' variant="h4">
 						Black Sheep News
 						</Typography>
 
@@ -184,7 +184,7 @@ export default function Articles() {
 						alt="" />
 
 					<CardContent>
-						<Typography className='gE' variant="h4">
+						<Typography className='gradient gA anime' variant="h4">
 						Les récompenses des Subscribers du mois de octobre
 						</Typography>
 

@@ -175,53 +175,38 @@ a{
     font-size: 34pt;
     text-align: center;
   }
+.gradient {
+  -webkit-text-fill-color: transparent;
+  -text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 100% 500%
+}
 
-  .gA{
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-image: linear-gradient(45deg, rgb(37, 47, 255) -100%, rgb(37, 106, 243) -50%, rgb(124, 192, 226) 0%, rgb(37, 106, 243) 50%, rgb(37, 47, 255) 100%);
-    
+  .gradient.gA{
+    background-image: rgb(37, 47, 255);
+    background-image: linear-gradient(49deg, #e94d4d 0, #ff564a 30%, #ec4856 58%, #ff5b8c 95%) !important;;
   }
-  .gB{
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-image: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
-    
+  .gradient.gB{
+    background-image: rgb(37, 47, 255);
+    background-image: linear-gradient(49deg, #e94d4d 0, #ff564a 30%, #ec4856 58%, #ff5b8c 95%) !important;;
   }
-  .gC{
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-image: linear-gradient(90deg, rgba(34,195,188,1) 0%, rgba(123,255,194,1) 100%);
-    
+
+.gradient.anime{
+    animation: gradient 2s ease infinite;
+    animation-direction: alternate
   }
-  .gD{
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-image: linear-gradient(90deg, rgba(195,34,34,1) 0%, rgba(242,123,255,1) 100%);
-    
-  }
-  .gE{
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-image:  linear-gradient(180deg, rgba(150,37,41,1) 0%, rgba(207,57,62,1) 20%,rgba(207,57,62,1) 80%, rgba(150,37,41,1) 100%);
-  }
-  .gE:hover{
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-image:  rgb(192, 207, 57); 
-  }
-  .gF{
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-image: linear-gradient(90deg, rgba(195,34,34,1) 0%, rgba(242,123,255,1) 100%);
-    
-  }
-  .gG{
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-image: linear-gradient(90deg, rgba(195,34,34,1) 0%, rgba(242,123,255,1) 100%);
-    
-  }
+
+  @keyframes gradient {
+    0% {
+        background-position: 0 0
+    }
+
+    100% {
+        background-position: 0 100%
+    }
+}
+
   .grey{
     color:#e2e2e2;
   }
