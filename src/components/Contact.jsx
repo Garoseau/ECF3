@@ -18,9 +18,9 @@ export default function Contact() {
 								placeholder="Ecrivez-moi." required="requis"></textarea>
 						</div>
 
-						<div class="message">
-								<input class='' type="reset" value="annuler"/>
-								<input type="submit" value="envoyer"/>
+						<div class="buttonbox">
+								<input class="button"type="reset" value="annuler"/>
+								<input class="button"type="submit" value="envoyer"/>
 						</div>
 
 				</form>
