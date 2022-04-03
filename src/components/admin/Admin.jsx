@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { Link, Navigate, useNavigate } from 'react-router-dom';
-import ProdService from '../../services/ProdServices'; // importons le service
+import ProdService, { getProducts } from '../../services/ProdServices'; // importons le service
 import AuthService from '../../services/LogServices';
 import NavbarAdmin from '../admin/NavbarAdmin'
 
 const Admin = () => {
+	
   const [products, setProducts] = useState([]);//déclaration de l'état initialisé à un tableau vide
 
 	useEffect(() => {
-    ProdService.getProducts()
+    ProdService.getProducts2() 
       .then(res => res.json())
       .then(data => setProducts(data))//lorsqu'il y a succès on met à jour l'état avec (data)
       .catch(err => console.error(err))//catch est exécuté lorsqu'il y a erreur
@@ -48,7 +49,7 @@ return(
 
 			{products && products.map(product => (
 			<tr key={product.id}>
-			<th>{product.id}</th>
+			<th>{product.auteur}</th>
 			<th>{product.Titre}</th>
 			<th>Auteur</th>
 			<th>Date de création</th>
