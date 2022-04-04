@@ -49,8 +49,8 @@ return(
 
 			{products && products.map(product => (
 			<tr>
-			<th class="text">{product.auteur}</th>
 			<th class="text">{product.titre}</th>
+			<th class="text">{product.auteur}</th>
 			<th class="text_tableau">{product.date}</th>
 			<th></th>
 			</tr>

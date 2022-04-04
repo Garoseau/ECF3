@@ -6,6 +6,7 @@ const AddArticles = () => {
     const initialState = { name: "", price: 0, image: "", available: false };
     const [product, setProduct] = useState(initialState);
     const navigate = useNavigate();
+		
     const handleChange = (e) => {
         let { name, value, checked, type } = e.target;
         value = type === 'checkbox' ? checked : value;
