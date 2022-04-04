@@ -48,14 +48,11 @@ return(
 			<tbody>
 
 			{products && products.map(product => (
-			<tr  >
-			<p>{product.auteur}</p>
-			<th>{product.Titre}</th>
-			<th>Auteur</th>
-			<th>Date de création</th>
-			<th>Date de publication</th>
-			<th>Date de dernière modification</th>
-			<th>Action</th>
+			<tr>
+			<th class="text">{product.auteur}</th>
+			<th class="text">{product.titre}</th>
+			<th>{product.date}</th>
+			<th></th>
 			</tr>
 			))}
 			</tbody>
