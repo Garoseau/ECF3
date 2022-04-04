@@ -1,6 +1,6 @@
 import '../App.css';
 import React from 'react'
-import { Link, NavLink, Outlet, Route, Routes } from "react-router-dom";
+import { Link, Outlet}from "react-router-dom";
 
 
 

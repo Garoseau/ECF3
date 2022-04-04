@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link, Navigate, useNavigate } from 'react-router-dom';
-import ProdService, { getProducts } from '../../services/ProdServices'; // importons le service
-import AuthService from '../../services/LogServices';
+import ProdService from '../../services/ProdServices'; // importons le service
 import NavbarAdmin from '../admin/NavbarAdmin'
 
 const Admin = () => {
