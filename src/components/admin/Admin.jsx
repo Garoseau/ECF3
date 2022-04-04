@@ -51,7 +51,7 @@ return(
 			<tr>
 			<th class="text">{product.auteur}</th>
 			<th class="text">{product.titre}</th>
-			<th>{product.date}</th>
+			<th class="text_tableau">{product.date}</th>
 			<th></th>
 			</tr>
 			))}
@@ -60,6 +60,8 @@ return(
 
 
 		</table>
+
+				
 
 		</div>
 		</>
