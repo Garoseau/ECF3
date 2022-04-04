@@ -24,45 +24,43 @@ console.log(products);//logons l'état
 
 return(
 	<>
-	<NavbarAdmin></NavbarAdmin>
+		<NavbarAdmin></NavbarAdmin>
 		<div class='box'>
 
 			<h2 class='grey'>Products</h2>
-		<table>
+			<table>
 
-			<thead>
+				<thead>
 
-			<tr class='grey'>
-			<th>ID</th>
-			<th>Titre</th>
-			<th>Auteur</th>
-			<th>Date de création</th>
-			<th>Date de publication</th>
-			<th>Date de dernière modification</th>
-			<th>Action</th>
-			</tr>
-			</thead>
+					<tr class='grey'>
+						<th>ID</th>
+						<th>Titre</th>
+						<th>Auteur</th>
+						<th>Date de création</th>
+						<th>Date de publication</th>
+						<th>Date de dernière modification</th>
+						<th>Action</th>
+					</tr>
+				</thead>
 
-			<tbody>
+				<tbody>
 
-			{products && products.map(product => (
-			<tr>
-			<th class="text">{product.titre}</th>
-			<th class="text">{product.auteur}</th>
-			<th class="text_tableau">{product.date}</th>
-			<th></th>
-			</tr>
-			))}
-			</tbody>
+					{products && products.map(product => (
+					<tr>
+						<th class="text">{product.titre}</th>
+						<th class="text">{product.auteur}</th>
+						<th class="text_tableau">{product.date}</th>
+						<th></th>
+					</tr>
+					))}
+				</tbody>
 
 
 
-		</table>
-
-				
+			</table>
 
 		</div>
-		</>
+	</>
 	)}
 
 	

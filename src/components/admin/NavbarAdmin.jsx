@@ -12,7 +12,6 @@ function NavbarAdmin() {
 	}	
  	return (
  <>
-
  	<div class="navbar">
  		<Link className='gradient gB anime navbar_text' to="/">Home</Link>
  		<Link className='gradient gB anime navbar_text' to="/propos">Propos</Link>
