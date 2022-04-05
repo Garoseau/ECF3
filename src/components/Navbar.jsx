@@ -10,7 +10,6 @@ function Navbar() {
  <>
  	<div class="navbar">
  		<Link className='gradient gB anime navbar_text' to="/">Home</Link>
-		 <Link className='gradient gB anime navbar_text' to="/AB">Home2</Link>
  		<Link className='gradient gB anime navbar_text' to="/Propos">Propos</Link>
  		<Link className='gradient gB anime navbar_text' to="/Contact">Contact</Link>
  		<a class="gradient gB anime navbar_text" href="https://www.millenium.org/games/game-376" target="_blank">MGG StarCitizen</a>

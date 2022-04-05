@@ -25,7 +25,7 @@ console.log(products);//logons l'état
 return(
 	<>
 		<NavbarAdmin></NavbarAdmin>
-		<div className='box'>
+		<div className='boxForm'>
 			<h2 className='gradient gGold anime'>Articles</h2>
 
 			<table className='center'>

@@ -23,13 +23,13 @@ return (
       <Route element={<Navbar />}>
 
         <Route path="/" element={<Articles />}/>
-        <Route path="/AB" element={<ArticlesB />}/>
         <Route path="/Propos" element={<Propos />}/>
         <Route path="/Contact" element={<Contact />}/>
 
       </Route>
 
       <Route path="Login" element={<Login/>} />
+      <Route path="ArticleAdmin" element={<PrivateRoute><ArticlesB/></PrivateRoute>}/>
       <Route path="Admin" element={<PrivateRoute><Admin/></PrivateRoute>}/>
       <Route path="AddArticles" element={<PrivateRoute><AddArticles/></PrivateRoute>}/>
 

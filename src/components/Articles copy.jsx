@@ -6,6 +6,7 @@ import { createTheme } from '@mui/material/styles';
 import Grid from '@mui/material/Grid';
 import { CardActionArea } from '@mui/material';
 import ProdServices from '../services/ProdServices';
+import NavbarAdmin from './admin/NavbarAdmin';
 
 const theme = createTheme();
 theme.typography.h4 = {
@@ -31,6 +32,7 @@ export default function ArticlesB() {
 
 return (
 	<>
+	<NavbarAdmin></NavbarAdmin>
 	{products && products.map(product => (
 	<Grid justifyContent={'center'} container spacing={6} rowSpacing={6} xs={12} key={product.id}
 	sx={{mt: 6, maxHeight:760}}>

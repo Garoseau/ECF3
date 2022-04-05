@@ -148,10 +148,10 @@
     text-align: justify;
     justify-content: center;
     display: flex;
-    color: #A1A1A6;
+    color: #e2e2e2;
   }
   .grey {
-    color: #e2e2e2;
+    color: #A1A1A6;
   }
   h2 {
     margin: auto;
@@ -225,7 +225,7 @@
     display: flex;
     margin: auto;
     margin-top: 10px;
-    margin-right: 30px;
+    margin-right: 62px;
     margin-bottom: 20px;
     width: 200px;
     height: 40px;
@@ -241,6 +241,16 @@
   input:hover {
     color: #0c9d46;
     transition: 0.5s;
+  }
+  .input-file{
+    display: none;
+  }
+  .label{
+    margin-top: 20px;
+    margin-right: 540px;
+    font-size: large;
+    font-weight: bolder;
+    cursor: pointer;
   }
   textarea:focus {
     border-color: #0c9d46;
