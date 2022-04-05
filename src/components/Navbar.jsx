@@ -9,12 +9,12 @@ function Navbar() {
  return (
  <>
  	<div class="navbar">
- 		<Link className='gradient gB anime navbar_text' to="/Home">Home</Link>
+ 		<Link className='gradient gB anime navbar_text' to="/home">Home</Link>
  		<Link className='gradient gB anime navbar_text' to="/propos">Propos</Link>
- 		<Link className='gradient gB anime navbar_text' to="/Contact">Contact</Link>
+ 		<Link className='gradient gB anime navbar_text' to="/contact">Contact</Link>
  		<a class="gradient gB anime navbar_text" href="https://www.millenium.org/games/game-376" target="_blank">MGG StarCitizen</a>
  		<a class="gradient gB anime navbar_text" href="img/CV_Julien_Gomes.pdf" target="_blank">CV</a>
- 		<Link className='gradient gB anime navbar_text' to="/Login">Login</Link>
+ 		<Link className='gradient gB anime navbar_text' to="/login">Login</Link>
  	</div>
 
  	<Outlet />
