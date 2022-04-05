@@ -153,6 +153,7 @@
   }
 
   /** BOX TEXT */
+  
   .box.centre {
     margin-top: 140px;
   }
@@ -211,7 +212,11 @@
     background-image: linear-gradient(49deg, #c0c0c0 0, #ffffff 30%, #ffffff 58%, #c3c2eb 95%) !important;
     ;
   }
-
+  .gradient.gC {
+    background-image: rgb(37, 47, 255);
+    background-image: linear-gradient(49deg, #fff241 0, #f8c53a 30%, #fdaf4a 58%, #f7d74c 95%) !important;
+    ;
+  }
   @keyframes gradient {
     0% {
       background-position: 0 0
@@ -291,10 +296,11 @@
 
   }
 
-
-
-
   /** FORMULAIRE */
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   .boxForm {
     z-index: 5;
@@ -374,7 +380,6 @@
   input:hover {
     color: #0c9d46;
     transition: 0.5s;
-
   }
 
   textarea:focus {
@@ -387,20 +392,8 @@
     line-height: 30px;
   }
 
-  table {
-    margin: auto;
-  }
-
-  tr {
-    text-align: center;
-    justify-content: center;
-    margin: auto;
-    position: relative;
-    display: flex;
-  }
-
   th {
-    padding: 30px;
+    padding: 20px;
   }
 
   /** PORTFOLIO GRID  */

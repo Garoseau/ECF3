@@ -26,36 +26,23 @@ return(
 	<>
 		<NavbarAdmin></NavbarAdmin>
 		<div className='box'>
+			<h2 className='gradient gC anime'>Articles</h2>
 
-			<h2 className='grey'>Products</h2>
-			<table>
+			<table className='center'>
 
-				<thead>
-
-					<tr className='grey'>
-						<th>ID</th>
+					<tr className='gradient gC anime'>
 						<th>Titre</th>
 						<th>Auteur</th>
 						<th>Date de création</th>
-						<th>Date de publication</th>
-						<th>Date de dernière modification</th>
-						<th>Action</th>
 					</tr>
-				</thead>
-
-				<tbody>
-
+	
 					{products && products.map(product => (
 					<tr key={product.id}>
-						<th className="text">{product.titre}</th>
-						<th className="text">{product.auteur}</th>
-						<th className="text_tableau">{product.date}</th>
-						<th></th>
+						<th className="">{product.titre}</th>
+						<th className="">{product.auteur}</th>
+						<th className="">{product.date}</th>
 					</tr>
 					))}
-				</tbody>
-
-
 
 			</table>
 
