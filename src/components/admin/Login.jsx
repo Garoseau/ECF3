@@ -30,10 +30,10 @@ const Login = () => {
         <form onSubmit={handleSubmit} className="form">
           
           <div>
-            <input type="email" className='form-control' name="email" id="email" placeholder='Mail' value={user.email}
+            <input type="email" className='' name="email" id="email" placeholder='Mail' value={user.email}
               onChange={handleChange} />
 
-            <input type="password" className='form-control' name="password" id="password" placeholder='Password'
+            <input type="password" className='' name="password" id="password" placeholder='Password'
               value={user.password} onChange={handleChange} />
           </div>
 

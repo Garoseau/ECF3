@@ -12,8 +12,7 @@ const AddArticles = () => {
     const handleChange = (e) => {
         let { name, value, checked, type } = e.target;
         value = type === 'checkbox' ? checked : value;
-        setProduct({ ...product, [name]: value });
-        console.log(product);
+        setProduct({ ...product, [name]: value});
     }
 
     const handleSubmit = (e) => {
@@ -30,28 +29,20 @@ const AddArticles = () => {
     <NavbarAdmin></NavbarAdmin>
     
     <div className='box'>
+      <h2 className='gradient gValid anime'>Ajout d'un Article</h2>
       <form onSubmit={handleSubmit}>
 
-        <div>
-          <label className='text'>Nom de l'article</label>
-          <input id='name' name='name'type="text" placeholder="Titre de l'article" value={product.titre} onChange={handleChange} />
-        </div>
 
-        <div>
-          <label className='text'>Auteur</label>
-          <input id='name' name='name'type="text" placeholder="Nom de l'auteur" value={product.auteur} onChange={handleChange} />
-        </div>
-
-        <div>
-          <label className='text'>Date</label>
-          <input id='name' name='name'type="text" placeholder="JJ/MM/AAAA" value={product.date} onChange={handleChange} />
-        </div>
-
+        <input type="text" name='titre' placeholder="Titre de l'article" onChange={handleChange} value={product.titre} />
+        <input type="text" name='auteur' placeholder="Nom de l'auteur" onChange={handleChange} value={product.auteur} />
+        <input type="text" name='date' placeholder="JJ/MM/AAAA" onChange={handleChange} value={product.date} />
         <div class="">
-        <input type="submit" class="button" />
+        <input type="submit" class="button" value="envoyer" />
         </div>
 
       </form>
+
+
     </div>
  </>
     )
