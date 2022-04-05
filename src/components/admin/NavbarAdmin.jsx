@@ -12,13 +12,13 @@ function NavbarAdmin() {
 	}	
  	return (
  <>
- 	<div class="navbar">
+ 	<div className="navbar">
  		<Link className='gradient gB anime navbar_text' to="/">Home</Link>
  		<Link className='gradient gB anime navbar_text' to="/propos">Propos</Link>
  		<Link className='gradient gB anime navbar_text' to="/Contact">Contact</Link>
 
- 		<a class="gradient gB anime navbar_text" href="https://www.millenium.org/games/game-376" target="_blank">MGG Star Citizen</a>
- 		<a class="gradient gB anime navbar_text" href="img/CV_Julien_Gomes.pdf" target="_blank">CV</a>
+ 		<a className="gradient gB anime navbar_text" href="https://www.millenium.org/games/game-376" target="_blank">MGG Star Citizen</a>
+ 		<a className="gradient gB anime navbar_text" href="img/CV_Julien_Gomes.pdf" target="_blank">CV</a>
 		<a className='gradient gB anime navbar_text' onClick={handleClick}>Logout</a>
  	</div>
 

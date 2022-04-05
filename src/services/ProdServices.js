@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = "http://localhost:3002/articles" 
+const API_URL = "http://localhost:3001/articles" 
   //url de l'api 
 
 const getProducts = () => {

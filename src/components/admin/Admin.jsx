@@ -25,14 +25,14 @@ console.log(products);//logons l'état
 return(
 	<>
 		<NavbarAdmin></NavbarAdmin>
-		<div class='box'>
+		<div className='box'>
 
-			<h2 class='grey'>Products</h2>
+			<h2 className='grey'>Products</h2>
 			<table>
 
 				<thead>
 
-					<tr class='grey'>
+					<tr className='grey'>
 						<th>ID</th>
 						<th>Titre</th>
 						<th>Auteur</th>
@@ -46,10 +46,10 @@ return(
 				<tbody>
 
 					{products && products.map(product => (
-					<tr>
-						<th class="text">{product.titre}</th>
-						<th class="text">{product.auteur}</th>
-						<th class="text_tableau">{product.date}</th>
+					<tr key={product.id}>
+						<th className="text">{product.titre}</th>
+						<th className="text">{product.auteur}</th>
+						<th className="text_tableau">{product.date}</th>
 						<th></th>
 					</tr>
 					))}

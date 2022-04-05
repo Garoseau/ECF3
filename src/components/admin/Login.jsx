@@ -12,7 +12,6 @@ const Login = () => {
     const handleChange = (e) => {
         let {name, value} = e.target;
         setUser({ ...user, [name]:value});
-        console.log(user)
     }
     const handleSubmit = (e)=>{
         e.preventDefault();
