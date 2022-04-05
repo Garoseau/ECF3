@@ -37,7 +37,7 @@ return(
 					</tr>
 	
 					{products && products.map(product => (
-					<tr key={product.id}>
+					<tr key={product.id} className="">
 						<th className="">{product.titre}</th>
 						<th className="">{product.auteur}</th>
 						<th className="">{product.date}</th>

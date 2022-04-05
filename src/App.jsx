@@ -8,6 +8,7 @@ import Contact from './components/Contact'
 import Login from './components/admin/Login'
 import Admin from './components/admin/Admin'
 import PrivateRoute from './components/admin/PrivateRoute';
+import AddArticles from './components/admin/AddArticles';
 
 
 
@@ -21,15 +22,14 @@ return (
       <Route element={<Navbar />}>
 
         <Route path="/" element={<Articles />}/>
-        <Route path="/home" element={<Articles />}/>
-        <Route path="/propos" element={<Propos />}/>
-        <Route path="/contact" element={<Contact />}/>
-        <Route path="/contact" element={<Contact />}/>
+        <Route path="/Propos" element={<Propos />}/>
+        <Route path="/Contact" element={<Contact />}/>
 
       </Route>
 
-      <Route path="login" element={<Login/>} />
-      <Route path="admin" element={<PrivateRoute><Admin/></PrivateRoute>}/>
+      <Route path="Login" element={<Login/>} />
+      <Route path="Admin" element={<PrivateRoute><Admin/></PrivateRoute>}/>
+      <Route path="AddArticles" element={<PrivateRoute><AddArticles/></PrivateRoute>}/>
 
     </Routes>
   </BrowserRouter>

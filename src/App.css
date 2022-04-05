@@ -60,7 +60,7 @@
     cursor: pointer;
   }
   .navbar_text {
-    padding-top: 6px;
+    padding-top: 10px;
     cursor: pointer;
     display: inline-block;
     transition: 0.5s;
@@ -100,9 +100,7 @@
     -text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    
-
-    background-size: 100% 500%
+    background-size: 100% 500%;
   }
   .gradient.anime {
     animation: gradient 2s ease infinite;
@@ -117,6 +115,7 @@
       background-position: 0 100%
     }
   }
+  
   .gA {
     background-image: rgb(37, 47, 255);
     background-image: linear-gradient(49deg, #e94d4d 0, #ff564a 30%, #ec4856 58%, #ff5b5b 95%);
@@ -252,12 +251,13 @@
     line-height: 30px;
   }
   th {
+    text-align:start;
     padding: 20px;
   }
   a {
   text-decoration: transparent;
   }
-  
+
   /** ICON */
 .Icon{
   background-image: url('../img/round_power_settings_new_white_48dp.png');
