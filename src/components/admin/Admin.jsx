@@ -26,11 +26,11 @@ return(
 	<>
 		<NavbarAdmin></NavbarAdmin>
 		<div className='box'>
-			<h2 className='gradient gC anime'>Articles</h2>
+			<h2 className='gradient gGold anime'>Articles</h2>
 
 			<table className='center'>
 
-					<tr className='gradient gC anime'>
+					<tr className='gradient gGold anime'>
 						<th>Titre</th>
 						<th>Auteur</th>
 						<th>Date de création</th>

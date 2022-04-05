@@ -1,46 +1,4 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 @media only screen and (min-width: 0px) {
-
-
   :root {
     --text: #ffffff;
     --noir: #151515;
@@ -86,7 +44,7 @@
   .navbar {
     border-bottom: #2b2b2b solid 1px;
     background: rgba(21, 21, 21, 0.8);
-    height: 50px;
+    height: 54px;
     backdrop-filter: saturate(180%) blur(20px);
     color: #e2e2e2;
     font-size: 16pt;
@@ -102,12 +60,11 @@
     cursor: pointer;
   }
   .navbar_text {
-    padding-top: 8px;
+    padding-top: 6px;
     cursor: pointer;
     display: inline-block;
     transition: 0.5s;
     color: inherit;
-    text-decoration: none;
     margin-left: 25px;
     margin-right: 25px;
   }
@@ -151,46 +108,6 @@
     animation: gradient 2s ease infinite;
     animation-direction: alternate
   }
-  
-  .gradient.gA {
-    background-image: rgb(37, 47, 255);
-    background-image: linear-gradient(49deg, #e94d4d 0, #ff564a 30%, #ec4856 58%, #ff5b5b 95%) !important;
-    ;
-  }
-  .gradient.gB {
-    background-image: rgb(37, 47, 255);
-    background-image: linear-gradient(49deg, #c0c0c0 0, #ffffff 30%, #ffffff 58%, #c3c2eb 95%) !important;
-    ;
-  }
-  .gradient.gC {
-    background-image: rgb(37, 47, 255);
-    background-image: linear-gradient(49deg, #fff241 0, #f8c53a 30%, #fdaf4a 58%, #f7d74c 95%) !important;
-    ;
-  }
-  .gradient.gD {
-    background-image: rgb(37, 47, 255);
-    background-image: linear-gradient(49deg, #7dff8f 0, #5fec6b 30%, #64eb86 58%, #65f896 95%) !important;
-    ;
-  }
-
-  .gradientIcon {
-    -webkit-text-fill-color: transparent;
-    -text-fill-color: transparent;
-    -webkit-background-clip: inherit;
-    background-clip:padding-box;
-
-    background-size: 100% 500%
-  }
-  .gradientIcon.anime {
-    animation: gradient 2s ease infinite;
-    animation-direction: alternate
-  }
-  .gradientIcon.gD {
-    background-image: rgb(37, 47, 255);
-    background-image: linear-gradient(49deg, #7dff8f 0, #5fec6b 30%, #64eb86 58%, #65f896 95%) !important;
-    ;
-  }
-
   @keyframes gradient {
     0% {
       background-position: 0 0
@@ -200,8 +117,32 @@
       background-position: 0 100%
     }
   }
+  .gA {
+    background-image: rgb(37, 47, 255);
+    background-image: linear-gradient(49deg, #e94d4d 0, #ff564a 30%, #ec4856 58%, #ff5b5b 95%);
+    ;
+  }
+  .gB {
+    background-image: rgb(37, 47, 255);
+    background-image: linear-gradient(49deg, #c0c0c0 0, #ffffff 30%, #ffffff 58%, #c3c2eb 95%);
+    ;
+  }
+  .gGold{
+    background-image: rgb(37, 47, 255);
+    background-image: linear-gradient(49deg, #fac022 0, #f89f3a 30%, #fdaf4a 58%, #ffeb7a 95%);
+    ;
+  }
+  .gValid {
+    background-image: rgb(37, 47, 255);
+    background-image: linear-gradient(49deg, #7dff8f 0, #5fec6b 30%, #64eb86 58%, #65f896 95%);
+    ;
+  }
+  .gError {
+    background-image: rgb(37, 47, 255);
+    background-image: linear-gradient(49deg, #dd4b4b 0, #ec5f5f 30%, #f34d4d 58%, #f86565 95%);
+    ;
+  }
 
-  
   /** TEXT */
   .text {
     border-radius: 30px;
@@ -313,10 +254,16 @@
   th {
     padding: 20px;
   }
-
-
-
-
-
+  a {
+  text-decoration: transparent;
+  }
   
+  /** ICON */
+.Icon{
+  background-image: url('../img/round_power_settings_new_white_48dp.png');
+    height: 20px;
+    width: 20px;
+    display: block;
+  }
+
   }
