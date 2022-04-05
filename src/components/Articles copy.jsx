@@ -33,17 +33,17 @@ return (
 	<>
 	{products && products.map(product => (
 	<Grid justifyContent={'center'} container spacing={6} rowSpacing={6} xs={12} key={product.id}
-	sx={{mt: 2, maxHeight:760}}>
+	sx={{mt: 6, maxHeight:760}}>
 
 	<ThemeProvider theme={theme}>
 
 		<Grid item xs={'auto'}>
+		
 			<Card 
-			sx={{ maxWidth: 500, bgcolor:'rgba(20, 20, 20, 0.8)', maxHeight:760, minHeight:760,borderRadius: 3, backdropFilter: "blur(5px)", border: 1, borderColor: "#2B2B2B"}}>
+			sx={{ maxWidth: 1920, bgcolor:'rgba(20, 20, 20, 0.8)', maxHeight:760, minHeight:760,borderRadius: 3, backdropFilter: "blur(5px)", border: 1, borderColor: "#2B2B2B"}}>
 				<CardActionArea 
 				className='boxCard' 
-				to="/Propos">
-
+				>
 						<CardMedia 
 						component="img" 
 						height="500"
@@ -60,15 +60,18 @@ return (
 							<Typography variant="h6" color="#A1A1A6" textAlign={'start'}>
 							{product.auteur}
 							</Typography>
+							<Typography variant="h6" color="#A1A1A6" textAlign={'start'}>
+							{product.date}
+							</Typography>
 						</CardContent>
+						
 
 				</CardActionArea>
-
 				<CardActions>
 					<Button size="small" color="success" sx={{color:'#fff'}}>Partager</Button>
 				</CardActions>
-				
 			</Card>
+
 		</Grid>
 
 	</ThemeProvider>

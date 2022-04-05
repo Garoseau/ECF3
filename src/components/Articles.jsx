@@ -29,7 +29,7 @@ export default function Articles() {
 		<Grid item xs={'auto'}>
 			<Card
 				sx={{ maxWidth: 500, bgcolor:'rgba(20, 20, 20, 0.8)', maxHeight:760, minHeight:760,borderRadius: 3, backdropFilter: "blur(5px)", border: 1, borderColor: "#2B2B2B"}}>
-				<CardActionArea className='boxCard' to="/Propos">
+				<CardActionArea className='' to="/Propos">
 					<a href="https://www.millenium.org/games/game-376">
 						<CardMedia component="img" height="500"
 							image="https://cdna.artstation.com/p/assets/images/images/027/839/028/large/julien-garoseau-gomes-gladius-concept-screen-ui.jpg?1592708367"
