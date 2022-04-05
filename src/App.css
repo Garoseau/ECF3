@@ -252,6 +252,9 @@
     font-weight: bolder;
     cursor: pointer;
   }
+  .pointer{
+    cursor: pointer;
+  }
   textarea:focus {
     border-color: #0c9d46;
     outline: none;

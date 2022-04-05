@@ -19,8 +19,8 @@ const updateProduct = (id, data) => {
     return axios.put(`${API_URL}/${id}`, data);
 };
 
-const removeProduct = id => {
-    return axios.delete(`${API_URL}/${id}`);
+const removeProduct = (id, data) => {
+    return axios.delete(`${API_URL}/${id}`, data);
 };
 
 export default { //export de la fonction getProducts

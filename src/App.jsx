@@ -10,6 +10,8 @@ import Login from './components/admin/Login'
 import Admin from './components/admin/Admin'
 import PrivateRoute from './components/admin/PrivateRoute';
 import AddArticles from './components/admin/AddArticles';
+import NavbarAdmin from './components/admin/NavbarAdmin';
+import DeleteArticles from './components/admin/DeleteArticles';
 
 
 
@@ -28,11 +30,21 @@ return (
 
       </Route>
 
+      <Route element={<NavbarAdmin />}>
+
+        <Route path="/" element={<Articles />}/>
+        <Route path="/Propos" element={<Propos />}/>
+        <Route path="/Contact" element={<Contact />}/>
+
+      </Route>
+
+
       <Route path="Login" element={<Login/>} />
       <Route path="ArticleAdmin" element={<PrivateRoute><ArticlesB/></PrivateRoute>}/>
       <Route path="Admin" element={<PrivateRoute><Admin/></PrivateRoute>}/>
       <Route path="AddArticles" element={<PrivateRoute><AddArticles/></PrivateRoute>}/>
-
+      <Route path="DeleteArticles" element={<PrivateRoute><DeleteArticles/></PrivateRoute>}/>
+      
     </Routes>
   </BrowserRouter>
 

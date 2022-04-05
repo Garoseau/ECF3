@@ -1,13 +1,6 @@
 {
   "articles": [
     {
-      "id": 1,
-      "titre": "Roadmap Roundup",
-      "auteur": "Wiset",
-      "date": "17/02/2022",
-      "img": "https://static1.millenium.org/articles/8/38/70/68/@/1564746-roadmap-roundup-article_image_bd-2.png"
-    },
-    {
       "id": 2,
       "titre": "Avertissement de CIG pour vos CCU en buyback",
       "auteur": "Wiset",

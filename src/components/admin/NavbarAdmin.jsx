@@ -22,7 +22,7 @@ function NavbarAdmin() {
 		<Link className='gradient gValid anime navbar_text' to="/Admin">Home Admin</Link>
 		<Link className='gradient gGold anime navbar_text' to="/ArticleAdmin">Articles</Link>
 		<Link className='gradient gValid anime navbar_text' to='/AddArticles'> Add</Link>
-		<Link className='gradient gError anime navbar_text' to='/add-product'> Delete</Link>
+		<Link className='gradient gError anime navbar_text' to='/DeleteArticles'> Delete</Link>
 
 		<a className='gradient gError anime navbar_text' onClick={handleClick}>Sign Off</a>
  	</div>
