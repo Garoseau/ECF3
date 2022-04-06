@@ -3,13 +3,6 @@
     {
       "titre": "La rivière fait son apparition",
       "auteur": "Nextraker",
-      "date": "09/09/2021",
-      "img": "https://static1.millenium.org/articles/0/38/89/00/@/1580474-unknown-article_image_bd-2.png",
-      "id": 1
-    },
-    {
-      "titre": "La rivière fait son apparition",
-      "auteur": "Nextraker",
       "date": "24/01/2022",
       "img": "https://static1.millenium.org/articles/0/38/89/00/@/1580474-unknown-article_image_bd-2.png",
       "id": 2
@@ -20,6 +13,20 @@
       "date": "26/03/2022",
       "img": "https://static1.millenium.org/articles/0/38/89/00/@/1580474-unknown-article_image_bd-2.png",
       "id": 3
+    },
+    {
+      "titre": "Pyro: Présentation de Pyro V",
+      "auteur": "Nextraker",
+      "date": "14/02/2022",
+      "img": "https://static1.millenium.org/articles/0/38/89/00/@/1580474-unknown-article_image_bd-2.png",
+      "id": 4
+    },
+    {
+      "titre": "Pyro: Présentation de Pyro V",
+      "auteur": "Wiset",
+      "date": "14/12/2021",
+      "img": "https://static1.millenium.org/articles/0/38/89/00/@/1580474-unknown-article_image_bd-2.png",
+      "id": 5
     }
   ]
 }
