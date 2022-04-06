@@ -1,12 +1,11 @@
 import { CardMedia, Button, CardActions, CardContent, Typography, Card, Cards } from '@mui/material';
 import React, { useState, useEffect } from 'react'
-import '../App.css';
 import { ThemeProvider } from '@mui/material/styles';
 import { createTheme } from '@mui/material/styles';
 import Grid from '@mui/material/Grid';
 import { CardActionArea } from '@mui/material';
-import ProdServices from '../services/ProdServices';
-import NavbarAdmin from './admin/NavbarAdmin';
+import ProdServices from '../../services/ProdServices';
+import NavbarAdmin from './NavbarAdmin';
 
 const theme = createTheme();
 theme.typography.h4 = {

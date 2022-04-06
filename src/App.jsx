@@ -1,13 +1,13 @@
 import './App.css';
 import React from 'react';
 import Articles from './components/Articles';
-import ArticlesB from './components/Articles copy';
 import { BrowserRouter, BrowserRouter as Link, Route, Routes } from "react-router-dom";
 import Navbar from './components/Navbar';
 import Propos from './components/Propos';
 import Contact from './components/Contact'
 import Login from './components/admin/Login'
 import Admin from './components/admin/Admin'
+import ArticlesB from './components/admin/ArticlesAdmin';
 import PrivateRoute from './components/admin/PrivateRoute';
 import AddArticles from './components/admin/AddArticles';
 import NavbarAdmin from './components/admin/NavbarAdmin';

@@ -35,8 +35,7 @@ const AddArticles = () => {
         <input type="text" name='titre' placeholder="Titre de l'article" onChange={handleChange} value={product.titre} />
         <input type="text" name='auteur' placeholder="Nom de l'auteur" onChange={handleChange} value={product.auteur} />
         <input type="text" name='date' placeholder="JJ/MM/AAAA" onChange={handleChange} value={product.date} />
-        <label htmlFor="file" className='text label gValid gradient anime'>Choisir une image</label>
-        <input type="file" className='input-file' id='file' placeholder="votre image" onChange={handleChange} value={product.img} />
+        <input type="url" className='' id='file' placeholder="URL de votre image" onChange={handleChange} value={product.img} />
 
         <div class="">
         <input type="submit" class="button" value="envoyer" />
