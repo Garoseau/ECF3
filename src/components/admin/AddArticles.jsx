@@ -17,7 +17,6 @@ const AddArticles = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(product);
         ProdService.addProduct(product).then(data => console.log(data))
                                          .catch(err=>console.error(err));
         setProduct(initialState);

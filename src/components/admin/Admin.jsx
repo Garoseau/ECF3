@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ProdService from '../../services/ProdServices'; // importons le service
 import NavbarAdmin from '../admin/NavbarAdmin'
-
+import { useNavigate, useLocation, Link } from 'react-router-dom';
 const Admin = () => {
 	
   const [products, setProducts] = useState([]);//déclaration de l'état initialisé à un tableau vide
@@ -41,9 +41,11 @@ return(
 						<th className="">{product.titre}</th>
 						<th className="">{product.auteur}</th>
 						<th className="">{product.date}</th>
+						<Link to={`/EditArticles/${product.id}`}
+							className='gradient gGold anime text' state={product}
+						>Edit</Link>
 					</tr>
 					))}
-
 			</table>
 
 		</div>

@@ -12,6 +12,7 @@ import PrivateRoute from './components/admin/PrivateRoute';
 import AddArticles from './components/admin/AddArticles';
 import NavbarAdmin from './components/admin/NavbarAdmin';
 import DeleteArticles from './components/admin/DeleteArticles';
+import EditArticles from './components/admin/EditArticles';
 
 
 
@@ -43,6 +44,8 @@ return (
       <Route path="ArticleAdmin" element={<PrivateRoute><ArticlesB/></PrivateRoute>}/>
       <Route path="Admin" element={<PrivateRoute><Admin/></PrivateRoute>}/>
       <Route path="AddArticles" element={<PrivateRoute><AddArticles/></PrivateRoute>}/>
+      <Route path="Admin/:id" element={<PrivateRoute><Admin/></PrivateRoute>}/>
+      <Route path="EditArticles/:id" element={<PrivateRoute><EditArticles/></PrivateRoute>}/>
       <Route path="DeleteArticles" element={<PrivateRoute><DeleteArticles/></PrivateRoute>}/>
       
     </Routes>
