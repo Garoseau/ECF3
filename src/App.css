@@ -255,6 +255,22 @@
   .pointer{
     cursor: pointer;
   }
+  .gras{
+    font-size: large;
+    font-weight: bolder;
+    margin-right: 50px;
+    text-align: justify;
+    justify-content:flex-end ;
+    display: flex;
+    margin-top: 8px;
+  }
+  .gras2  {
+    font-size: large;
+    font-weight: bolder;
+    text-align:end;
+    display: flex;
+    margin-bottom: 8px;
+  }
   textarea:focus {
     border-color: #0c9d46;
     outline: none;

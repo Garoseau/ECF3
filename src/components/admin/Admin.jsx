@@ -27,6 +27,9 @@ return(
 		<NavbarAdmin></NavbarAdmin>
 		<div className='boxForm'>
 			<h2 className='gradient gGold anime'>Articles</h2>
+			<Link to="/AddArticles"
+							className='gradient gValid anime  gras' 
+						>Ajout</Link>
 
 			<table className='center'>
 
@@ -42,8 +45,15 @@ return(
 						<th className="">{product.auteur}</th>
 						<th className="">{product.date}</th>
 						<Link to={`/EditArticles/${product.id}`}
-							className='gradient gGold anime text' state={product}
+							className='gradient gGold anime text gras' state={product}
 						>Edit</Link>
+						<th to={`/DeleteArticles/${product.id}`} className='gError gradient anime gras2 pointer'
+									onClick={() => {
+										if (window.confirm('Etes vous sur ?')) {
+											deleteProduct(product.id);
+										}
+									}}>Supprimer</th>
+
 					</tr>
 					))}
 			</table>
