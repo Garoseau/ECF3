@@ -4,7 +4,7 @@ import ProdService from '../../services/ProdServices';
 import NavbarAdmin from './NavbarAdmin';
 
 const EditArticles = () => {
-	const initialState = { titre: "", auteur: "", date: "" };
+	const initialState = { titre: "", auteur: "", date: "", img: "" };
 	const [product, setProduct] = useState(initialState);
     const navigate = useNavigate();
     const location = useLocation();
@@ -24,12 +24,11 @@ const EditArticles = () => {
         e.preventDefault();
         console.log(product);
 
-        const modifProd = { titre: product.titre, auteur: product.auteur, date: product.date }
+        const modifProd = { titre: product.titre, auteur: product.auteur, date: product.date, img: product.img }
         ProdService.updateProduct(product.id, modifProd).then(data => console.log(data))
             																						.catch(err => console.error(err));
         setProduct(initialState);
         navigate('/Admin');
-
     }
     console.log(location.state);
 
@@ -45,7 +44,7 @@ const EditArticles = () => {
         <input type="text" id='titre' name='titre' placeholder={product.titre} onChange={handleChange} value={product.titre} />
         <input type="text" id='auteur' name='auteur' placeholder={product.auteur} onChange={handleChange}value={product.auteur}  />
         <input type="text" id='date' name='date' placeholder={product.date} onChange={handleChange}value={product.date}  />
-
+        <input type="text" className='' id='file' placeholder={product.img} onChange={handleChange} value={product.img} />
         <div class="">
         <input type="submit" class="button" value="envoyer" />
         </div>

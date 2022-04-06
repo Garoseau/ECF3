@@ -5,7 +5,7 @@ import ProdService from '../../services/ProdServices';
 import NavbarAdmin from './NavbarAdmin';
 
 const AddArticles = () => {
-    const initialState = { titre: "", auteur: "", date: "" };
+    const initialState = { titre: "", auteur: "", date: "", img:"" };
     const [product, setProduct] = useState(initialState);
     const navigate = useNavigate();
 		
@@ -35,7 +35,7 @@ const AddArticles = () => {
         <input type="text" name='titre' placeholder="Titre de l'article" onChange={handleChange} value={product.titre} />
         <input type="text" name='auteur' placeholder="Nom de l'auteur" onChange={handleChange} value={product.auteur} />
         <input type="text" name='date' placeholder="JJ/MM/AAAA" onChange={handleChange} value={product.date} />
-        <input type="url" className='' id='file' placeholder="URL de votre image" onChange={handleChange} value={product.img} />
+        <input type="text" name='img' placeholder="URL de votre image" onChange={handleChange} value={product.img} />
 
         <div class="">
         <input type="submit" class="button" value="envoyer" />
