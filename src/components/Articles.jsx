@@ -34,9 +34,13 @@ export default function Articles() {
 						<CardMedia component="img" height="500"
 							image="https://cdna.artstation.com/p/assets/images/images/027/839/028/large/julien-garoseau-gomes-gladius-concept-screen-ui.jpg?1592708367"
 							alt="" />
+					</a>
+				</CardActionArea>
 						<CardContent>
-							<Typography className='gradient gA anime' variant="h4">
+							<Typography className='gradient gA anime' variant="h4" >
+								<a href="https://www.millenium.org/games/game-376">
 								Star Citizen: UI Concept "Aegis Dynamics"
+								</a>
 							</Typography>
 
 						</CardContent>
@@ -47,8 +51,6 @@ export default function Articles() {
 								It' was done on photoshop and illustator.
 							</Typography>
 						</CardContent>
-					</a>
-				</CardActionArea>
 				<CardActions>
 					<Button size="small" color="success" sx={{color:'#fff'}}>Partager</Button>
 				</CardActions>
@@ -91,7 +93,7 @@ export default function Articles() {
 
 		<Grid item xs={'auto'}>
 			<Card
-				sx={{ maxWidth: 500, bgcolor:'rgba(20, 20, 20, 0.8)', maxHeight:760, minHeight:760,borderRadius: 3, backdropFilter: "blur(5px)", backdropFilter: "blur(5px)", border: 1, borderColor: "#2B2B2B"}}>
+				sx={{ maxWidth: 500, bgcolor:'rgba(20, 20, 20, 0.8)', maxHeight:760, minHeight:760,borderRadius: 3, backdropFilter: "blur(5px)", border: 1, borderColor: "#2B2B2B"}}>
 
 				<CardActionArea className='boxCard'>
 					<a href='https://www.artstation.com/artwork/lVPore'>
