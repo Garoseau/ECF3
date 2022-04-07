@@ -24,11 +24,12 @@ export default function Articles() {
 <Grid justifyContent={'center'} container spacing={6} rowSpacing={6} xs={12} key={Articles.id}
 	sx={{mt: 2, maxHeight:760}}>
 
-	<ThemeProvider theme={theme}>
+<ThemeProvider theme={theme}>
 
 		<Grid item xs={'auto'}>
-			<Card
-				sx={{ maxWidth: 500, bgcolor:'rgba(20, 20, 20, 0.8)', maxHeight:760, minHeight:760,borderRadius: 3, backdropFilter: "blur(5px)", border: 1, borderColor: "#2B2B2B"}}>
+			<Card sx={{ maxWidth: 500, bgcolor:'rgba(20, 20, 20, 0.8)', maxHeight:760, minHeight:760,borderRadius: 3, backdropFilter: "blur(5px)", border: 1, borderColor: "#2B2B2B"}}>
+				
+				{/* img */}
 				<CardActionArea className='' to="/Propos">
 					<a href="https://www.millenium.org/games/game-376">
 						<CardMedia component="img" height="500"
@@ -36,21 +37,26 @@ export default function Articles() {
 							alt="" />
 					</a>
 				</CardActionArea>
-						<CardContent>
-							<Typography className='gradient gA anime' variant="h4" >
-								<a href="https://www.millenium.org/games/game-376">
-								Star Citizen: UI Concept "Aegis Dynamics"
-								</a>
-							</Typography>
 
-						</CardContent>
-						<CardContent>
-							<Typography variant="h6" color="#A1A1A6" textAlign={'start'}>
-								For the sake of an article on Millenium Star Citizen, I undertook to recreate the Concept Screen UI
-								shown in the show "Inside Star Citizen". Except for the fonts, I think I did well in 4 hours of work.
-								It' was done on photoshop and illustator.
-							</Typography>
-						</CardContent>
+				{/* title */}
+				<CardContent>
+					<Typography className='gradient gA anime' variant="h4" >
+					<a href="https://www.millenium.org/games/game-376">
+						Star Citizen: UI Concept "Aegis Dynamics"
+					</a>
+					</Typography>
+				</CardContent>
+
+				{/* description */}
+				<CardContent>
+					<Typography variant="h6" color="#A1A1A6" textAlign={'start'}>
+						For the sake of an article on Millenium Star Citizen, I undertook to recreate the Concept Screen UI
+						shown in the show "Inside Star Citizen". Except for the fonts, I think I did well in 4 hours of work.
+						It' was done on photoshop and illustator.
+					</Typography>
+				</CardContent>
+				
+				{/* share */}
 				<CardActions>
 					<Button size="small" color="success" sx={{color:'#fff'}}>Partager</Button>
 				</CardActions>
@@ -58,38 +64,42 @@ export default function Articles() {
 		</Grid>
 
 		<Grid item xs={'auto'}>
-			<Card
-				sx={{ maxWidth: 500, bgcolor:'rgba(20, 20, 20, 0.8)', maxHeight:760, minHeight:760,borderRadius: 3, backdropFilter: "blur(5px)", border: 1, borderColor: "#2B2B2B"}}>
-
-				<CardActionArea className='boxCard'>
-					<a href='https://www.artstation.com/artwork/mDZYa8'>
+			<Card sx={{ maxWidth: 500, bgcolor:'rgba(20, 20, 20, 0.8)', maxHeight:760, minHeight:760,borderRadius: 3, backdropFilter: "blur(5px)", border: 1, borderColor: "#2B2B2B"}}>
+				
+				{/* img */}
+				<CardActionArea className='' to="/Propos">
+					<a href="https://www.artstation.com/artwork/mDZYa8">
 						<CardMedia component="img" height="500"
 							image="https://cdna.artstation.com/p/assets/images/images/027/584/976/large/julien-garoseau-gomes-ascenseura.jpg?1591950082"
 							alt="" />
-
-						<CardContent>
-							<Typography className='gradient gA anime' variant="h4">
-								Star Citizen: UI Concept "Crusader Industries"
-							</Typography>
-
-						</CardContent>
-
-						<CardContent>
-							<Typography variant="h6" color="#A1A1A6" textAlign={'start'}>
-								So I made this because I wanted to know where my skills were in terms of speed and it was pretty good,
-								where the Drake UI took me 1 month to do it, this one tuck me just 1 week, so I'm pretty happy
-							</Typography>
-						</CardContent>
-
 					</a>
 				</CardActionArea>
 
+				{/* title */}
+				<CardContent>
+					<Typography className='gradient gA anime' variant="h4" >
+					<a href="https://www.millenium.org/games/game-376">
+					Star Citizen: UI Concept "Crusader Industries"
+					</a>
+					</Typography>
+				</CardContent>
+
+				{/* description */}
+				<CardContent>
+					<Typography variant="h6" color="#A1A1A6" textAlign={'start'}>
+					So I made this because I wanted to know where my skills were in terms of speed and it was pretty good,
+								where the Drake UI took me 1 month to do it, this one tuck me just 1 week, so I'm pretty happy
+					</Typography>
+				</CardContent>
+				
+				{/* share */}
 				<CardActions>
 					<Button size="small" color="success" sx={{color:'#fff'}}>Partager</Button>
 				</CardActions>
-
 			</Card>
 		</Grid>
+
+
 
 		<Grid item xs={'auto'}>
 			<Card
@@ -220,7 +230,7 @@ export default function Articles() {
 			</Card>
 		</Grid>
 
-	</ThemeProvider>
+</ThemeProvider>
 	
 </Grid>
 
