@@ -38,8 +38,13 @@
     flex-direction: center;
     position: relative;
     z-index: 1;
-  }
+    scrollbar-width: none;
 
+  }
+  :root::-webkit-scrollbar {
+    display: none;
+    scrollbar-width: none;
+  }
   /** NAVBAR */
   .navbar {
     border-bottom: #2b2b2b solid 1px;
