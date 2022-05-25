@@ -5,15 +5,6 @@ import { BrowserRouter, BrowserRouter as Link, Route, Routes } from "react-route
 import Navbar from './components/Navbar';
 import Propos from './components/Propos';
 import Contact from './components/Contact'
-import Login from './components/admin/Login'
-import Admin from './components/admin/Admin'
-import ArticlesB from './components/admin/ArticlesAdmin';
-import PrivateRoute from './components/admin/PrivateRoute';
-import AddArticles from './components/admin/AddArticles';
-import NavbarAdmin from './components/admin/NavbarAdmin';
-import DeleteArticles from './components/admin/DeleteArticles';
-import EditArticles from './components/admin/EditArticles';
-
 
 
 function App() {
@@ -31,22 +22,6 @@ return (
 
       </Route>
 
-      <Route element={<NavbarAdmin />}>
-
-        <Route path="/" element={<Articles />}/>
-        <Route path="/Propos" element={<Propos />}/>
-        <Route path="/Contact" element={<Contact />}/>
-
-      </Route>
-
-
-      <Route path="Login" element={<Login/>} />
-      <Route path="ArticleAdmin" element={<PrivateRoute><ArticlesB/></PrivateRoute>}/>
-      <Route path="Admin" element={<PrivateRoute><Admin/></PrivateRoute>}/>
-      <Route path="AddArticles" element={<PrivateRoute><AddArticles/></PrivateRoute>}/>
-      <Route path="Admin/:id" element={<PrivateRoute><Admin/></PrivateRoute>}/>
-      <Route path="EditArticles/:id" element={<PrivateRoute><EditArticles/></PrivateRoute>}/>
-      <Route path="DeleteArticles" element={<PrivateRoute><DeleteArticles/></PrivateRoute>}/>
       
     </Routes>
   </BrowserRouter>
